@@ -8,10 +8,10 @@
 OpenSeek aims to unite the global open source community to drive collaborative innovation in algorithms, data and systems to develop next-generation models that surpass DeepSeek.
 English| [简体中文](README_zh.md)
 
-[![GitHub license](https://img.shields.io/github/license/FlagOpen/OpenSeek)](https://github.com/FlagOpen/OpenSeek/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/FlagOpen/OpenSeek)](https://github.com/FlagOpen/OpenSeek/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/FlagOpen/OpenSeek)](https://github.com/FlagOpen/OpenSeek/network)
-[![GitHub issues](https://img.shields.io/github/issues/FlagOpen/OpenSeek)](https://github.com/FlagOpen/OpenSeek/issues)
+[![GitHub license](https://img.shields.io/github/license/FlagAI-Open/OpenSeek)](https://github.com/FlagAI-Open/OpenSeek/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/FlagAI-Open/OpenSeek)](https://github.com/FlagAI-Open/OpenSeek/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/FlagAI-Open/OpenSeek)](https://github.com/FlagAI-Open/OpenSeek/network)
+[![GitHub issues](https://img.shields.io/github/issues/FlagAI-Open/OpenSeek)](https://github.com/FlagAI-Open/OpenSeek/issues)
 
 </div>
 
@@ -23,7 +23,7 @@ OpenSeek is an open source project initiated by the Beijing Academy of Artificia
 - Construct a high-performance system to support multiple AI chips: Reduce costs and dependency on specific chips, and enhance model universality and adaptability.
 - Build an independent open source algorithmic innovation system: Promote independent algorithmic innovation and technology sharing through open source collaboration.
 
-**Project Repository:** https://github.com/FlagOpen/OpenSeek
+**Project Repository:** https://github.com/FlagAI-Open/OpenSeek
 
 # 📢 News
 - 🔥[02/13/2025] Completed validation of the OpenSeek-PT-1T dataset on a 3B size model, released model checkpoints, data ratios, training codes with hyperparameters, and wandb logs.

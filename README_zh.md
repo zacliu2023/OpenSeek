@@ -8,10 +8,10 @@
 OpenSeek旨在联合全球开源社区，推动算法、数据和系统的协同创新，开发出超越DeepSeek的下一代模型。
 [English](README.md) | 简体中文
 
-[![GitHub license](https://img.shields.io/github/license/FlagOpen/OpenSeek)](https://github.com/FlagOpen/OpenSeek/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/FlagOpen/OpenSeek)](https://github.com/FlagOpen/OpenSeek/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/FlagOpen/OpenSeek)](https://github.com/FlagOpen/OpenSeek/network)
-[![GitHub issues](https://img.shields.io/github/issues/FlagOpen/OpenSeek)](https://github.com/FlagOpen/OpenSeek/issues)
+[![GitHub license](https://img.shields.io/github/license/FlagAI-Open/OpenSeek)](https://github.com/FlagAI-Open/OpenSeek/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/FlagAI-Open/OpenSeek)](https://github.com/FlagAI-Open/OpenSeek/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/FlagAI-Open/OpenSeek)](https://github.com/FlagAI-Open/OpenSeek/network)
+[![GitHub issues](https://img.shields.io/github/issues/FlagAI-Open/OpenSeek)](https://github.com/FlagAI-Open/OpenSeek/issues)
 
 </div>
 
@@ -23,7 +23,7 @@ OpenSeek是由北京智源人工智能研究院（BAAI）发起的开源项目�
 - 打造开放软硬协同的系统，支持多AI芯片：降低成本，减少对特定芯片的依赖，提升模型的通用性和适应性。
 - 构建开源自主的算法创新体系：通过开源合作，促进算法的自主创新和技术共享。
 
-**项目地址：** https://github.com/FlagOpen/OpenSeek
+**项目地址：** https://github.com/FlagAI-Open/OpenSeek
 # 📢News
 - 🔥[02/13/2025] 完成3B尺寸模型上验证了OpenSeek-PT-1T数据集效果, release 模型ckpt,数据配比,训练代码与超参以及wandb
 # 👁 项目核心亮点
