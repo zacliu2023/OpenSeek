@@ -65,7 +65,7 @@ OpenSeek是由北京智源人工智能研究院（BAAI）发起的开源项目�
 | 方向 | 一：完成制作OpenSeek-data-1.3TB，支持OpenSeek-Small分布式训练 | 二：扩展数据规模和优化分布式训练性能，在最终版OpenSeek-PT-1.3T数据上完成OpenSeek-small训练 | 三：支持更大规模数据和分布式训练，在OpenSeek-PT-8T数据上完成OpenSeek-Mid训练，实现全流程训练支持 | 四：升级多芯片支持，开源数据集和模型权重 |
 |------|------|------|------|------|
 | 数据 | ☐ 构建数据处理+数据合成的数据pipline<br>☐ 构建OpenSeek-PT-1.3T-v0.1<br>☐ 基于OpenSeek-Small数据配比实验结果构建OpenSeek-data-1.3T 正式版 | ☐ 扩大数据规模, 构建OpenSeek-PT-8T<br>☐ 构建Long-CoT-Backward合成数据集并验证效果 | ☐ 构建 OpenSeek-Zero数据集<br>☐ 构建 OpenSeek-RL数据集<br>☐ 构建 OpenSeek-SFT数据集<br>☐ 构建Long-CoT-Forward合成数据集并验证效果 | ☐ 发布正式版本OpenSeek系列数据集<br>☐ 构建Long-CoT-RAG合成数据集并验证效果 |
-| 训练 | ☐ 完成3B模型在OpenSeek-PT-1.3T-v0.1上的效果验证（Baseline)<br>☐ 完成OpenSeek-Small实验性训练（~100B） | ☐ 完成OpenSeek-Small的超参实验<br>☐ 验证OpenSeek-PT-4T效果<br>☐ 完成OpenSeek-Small在OpenSeek-PT-1.3T-v1.0的完整训练 | ☐ 完成OpenSeek-Small-Zero复现<br>☐ 完成OpenSeek-Small-SFT复现<br>☐ 完成OpenSeek-Small-RL复现<br>☐ 完成OpenSeek-Mid的超参实验<br>☐ 验证OpenSeek-PT-8T效果<br>☐ 完成OpenSeek-Mid在OpenSeek-PT-8T的完整训练 | ☐ 完成OpenSeek-Mid-Zero复现<br>☐ 完成OpenSeek-Mid-SFT复现<br>☐ 完成OpenSeek-Mid-RL复现 |
+| 训练 | ☐ 完成3B模型在OpenSeek-PT-1.3T-v0.1上的效果验证（Baseline)<br>☐ 完成OpenSeek-Small实验性训练（~100B） | ☐ 完成OpenSeek-Small的超参实验<br>☐ 验证OpenSeek-PT-4T效果<br>☐ 完成OpenSeek-Small在OpenSeek-PT-1.3T-v1.0的完整训练 | ☐ 完成OpenSeek-Small-Zero开发<br>☐ 完成OpenSeek-Small-SFT开发<br>☐ 完成OpenSeek-Small-RL开发<br>☐ 完成OpenSeek-Mid的超参实验<br>☐ 验证OpenSeek-PT-8T效果<br>☐ 完成OpenSeek-Mid在OpenSeek-PT-8T的完整训练 | ☐ 完成OpenSeek-Mid-Zero开发<br>☐ 完成OpenSeek-Mid-SFT开发<br>☐ 完成OpenSeek-Mid-RL开发 |
 | 系统 | ☐ 对MLA、DeepSeek MoE、MTP、Auxiliary-Loss-Free等分布式训练支持<br>☐ DeepSeek V3参数转换并加载 | ☐ 支持Node-limited Routing MoE<br>☐ FP8分布式训练支持与验证<br>☐ 集成基于Triton的算子库FlagGems | ☐ DualPipe流水线并行支持<br>☐ 进一步计算通信重叠与显存优化 | ☐ 对不同芯片进行训练适配和精度对齐<br>☐ 针对特定芯片，实现定制化的并行策略和优化策略 |
 
 # 📚 数据
@@ -146,7 +146,7 @@ FlagScale 架构可以分为三层：
 
 3. **后端（Backend）** 包含底层算子库和通信库，确保高效可靠的性能，尤其是基于Triton的算子库[FlagGems](https://github.com/FlagOpen/FlagGems)和异构统一通信库[FlagCX](https://github.com/FlagOpen/FlagCX)，能够实现不同芯片上的计算与通信。
 
-本项目将利用 FlagScale 框架，并结合开源社区的力量，致力于复现 DeepSeek V3 & R1 的分布式训练系统技术，并努力确保该系统在端到端训练过程中的稳定性和实际效果。在此基础上，我们希望进一步探索模型算法与系统效率协同优化的技术，包括：
+本项目将利用 FlagScale 框架，并结合开源社区的力量，致力于开发 DeepSeek V3 & R1 的分布式训练系统技术，并努力确保该系统在端到端训练过程中的稳定性和实际效果。在此基础上，我们希望进一步探索模型算法与系统效率协同优化的技术，包括：
 
 - **模型结构改进**：进一步改进 MLA、MTP、MoE等，以优化模型性能和训练效率。
 - **计算与通信调度优化**：研发适用于更多芯片的高通用性计算与通信调度技术，提升跨硬件平台的兼容性和计算效率。
@@ -167,5 +167,5 @@ FlagScale 架构可以分为三层：
 - 模型权重采用Apache 2.0许可协议
 - 数据采用CC BY-SA 4.0许可协议
 
-**注意事项**：完整复现需至少8张H100 GPU，建议使用SLURM集群管理系统。数据集需自行申请或生成，部分敏感数据不包含在开源包内。
+**注意事项**：完整开发需至少8张H100 GPU，建议使用SLURM集群管理系统。数据集需自行申请或生成，部分敏感数据不包含在开源包内。
 
