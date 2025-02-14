@@ -161,7 +161,7 @@ FlagScale 架构可以分为三层：
 
 | 类别 | 数据 | ckpt | 评测结果 | 训练超参 | Wandb | 讨论 |
 |------|------|------|-----------|----------|--------|------|
-| 内容 | Aquila-3B数据验证模型<br>OpenSeek-PT-1.3T v0.1 [link] | link | [图片] | seqlen: 4096<br>gbs: 8M<br>lr: 3.0e-3<br>lr_decay_style: WSD | 截图（link）<br>[图片]<br>https://wandb.ai/aquila3/OpenSeek-3B-v0.1/runs/aquila_3b_exp02-rank-63 | 结论（详细讨论过程link） |
+| 内容 | Aquila-3B数据验证模型<br>OpenSeek-PT-1.3T v0.1 | -- | ![Eval](3B-results.jpeg)<br> | seqlen: 4096<br>gbs: 8M<br>lr: 3.0e-3<br>lr_decay_style: WSD | ![Loss](3B-loss.png)<br>https://wandb.ai/aquila3/OpenSeek-3B-v0.1/runs/aquila_3b_exp02-rank-63 | -- |
 
 # 📜 许可协议
 - 代码采用Apache 2.0许可证
