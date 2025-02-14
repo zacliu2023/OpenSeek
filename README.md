@@ -16,11 +16,11 @@ English| [简体中文](README_zh.md)
 </div>
 
 # 📌 Project Overview
-OpenSeek is an open source project initiated by the Beijing Academy of Artificial Intelligence (BAAI), aiming to unite the global open source community to drive collaborative innovation in algorithms, data and systems to develop next-generation models that surpass DeepSeek. Drawing inspiration from large model initiatives like Bigscience and OPT, the project is dedicated to building an independent open source algorithmic innovation system. Since the open sourcing of the DeepSeek model, academia has seen numerous algorithmic improvements and breakthroughs, but these innovations often lack complete code implementations, necessary computational resources, and high-quality data support. The OpenSeek project hopes to explore high-quality dataset construction mechanisms through uniting the open source community, promote open sourcing of the entire large model training pipeline, build innovative training and inference code to support multiple AI chips, and promote independent technological innovation and application development.
+OpenSeek is an open source project initiated by the Beijing Academy of Artificial Intelligence (BAAI), aiming to unite the global open source communities to drive collaborative innovation in algorithms, data and systems to develop next-generation models that surpass DeepSeek. Drawing inspiration from large model initiatives like Bigscience and OPT, the project is dedicated to building an independent open source algorithmic innovation system. Since the open sourcing of the DeepSeek model, academia has seen numerous algorithmic improvements and breakthroughs, but these innovations often lack complete code implementations, necessary computational resources, and high-quality data support. The OpenSeek project hopes to explore high-quality dataset construction mechanisms through uniting the open source community, promote open sourcing of the entire large model training pipeline, build innovative training and inference code to support various AI chips besides Nvidia, and promote independent technological innovation and application development.
 
 **Core Objectives of OpenSeek:**
 - Innovative data synthesis technology: Address the challenge of acquiring high-quality data and break through data barriers.
-- Construct a high-performance system to support multiple AI chips: Reduce costs and dependency on specific chips, and enhance model universality and adaptability.
+- Support for multiple AI chips: Reduce dependency on specific chips and improve model universality and adaptability.
 - Build an independent open source algorithmic innovation system: Promote independent algorithmic innovation and technology sharing through open source collaboration.
 
 **Project Repository:** https://github.com/FlagAI-Open/OpenSeek
@@ -29,10 +29,10 @@ OpenSeek is an open source project initiated by the Beijing Academy of Artificia
 - 🔥[02/13/2025] Completed validation of the OpenSeek-PT-1T dataset on a 3B size model, released model checkpoints, data ratios, training codes with hyperparameters, and wandb logs.
 
 # 👁 Project Highlights
-- High-quality data open and accessible
+ - High-quality data open and accessible
   - Open source large-scale high-quality Chinese and English datasets (>4TB), covering a wide variety of data types and scenarios.
   - Open source high-quality dataset construction plans, supporting diverse high-quality data synthesis based on human data, helping developers achieve innovation at the data level.
-- Multi-AI chip high-performance distributed training framework
+- Multi-AI chip distributed training framework
   - Support for Triton operators, multi-chip training, compatible with various hardware architectures, ensuring efficient utilization of different devices.
   - Implement more efficient computation, communication, and memory access collaborative hybrid parallel schemes, providing cluster training logs and performance data to help developers optimize large-scale training tasks.
 - Model structure optimization and improvement
@@ -47,7 +47,6 @@ Welcome to check our [Contribution Guide](CONTRIBUTING.md) for more details.
 Whether you are:
 - A deep learning expert with experience in large model training;
 - A data scientist dedicated to data construction and algorithm innovation;
-- An engineer focused on system optimization and performance improvement;
 - Or a beginner passionate about open source projects;
 
 You can find a platform to showcase your talents at OpenSeek. You can contribute in the following ways:
