@@ -161,7 +161,7 @@ Through these technological innovations, we hope to promote the efficiency, comp
 
 | Category | Data | ckpt | Evaluation Results | Training Hyperparameters | Wandb | Discussion |
 |----------|------|------|--------------------|--------------------------|-------|------------|
-| Content  | Aquila-3B data validation model<br>OpenSeek-PT-1.3T v0.1 | -- | ![Eval](3B-results.jpeg)<br> | seqlen: 4096<br>gbs: 8M<br>lr: 3.0e-3<br>lr_decay_style: WSD | ![Loss](3B-loss.png)<br>https://wandb.ai/aquila3/OpenSeek-3B-v0.1/runs/aquila_3b_exp02-rank-63 | -- |
+| Content  | Aquila-3B data validation model<br>OpenSeek-PT-1.3T v0.1 | -- | ![Eval](pretraining/v0.1/eval/3B-results.jpeg)<br> | seqlen: 4096<br>gbs: 8M<br>lr: 3.0e-3<br>lr_decay_style: WSD | ![Loss](pretraining/v0.1/train/3B-loss.png)<br>https://wandb.ai/aquila3/OpenSeek-3B-v0.1/runs/aquila_3b_exp02-rank-63 | -- |
 
 # 📜 License Agreement
 - Code is licensed under Apache 2.0
