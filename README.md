@@ -26,7 +26,9 @@ OpenSeek is an open source project initiated by the Beijing Academy of Artificia
 **Project Repository:** https://github.com/FlagAI-Open/OpenSeek
 
 # 📢 News
+- 🔥[02/25/2025] #1 online meetup 18:00-19:00 ：https://meeting.tencent.com/v2/cloud-record/share?id=e188482b-0105-43f9-b8e7-cf5f1e4d136b&from=3&is-single=false&record_type=2
 - 🔥[02/13/2025] Completed validation of the OpenSeek-PT-1T dataset on a 3B size model, released model checkpoints, data ratios, training codes with hyperparameters, and wandb logs.
+
 
 # 👁 Project Highlights
  - High-quality data open and accessible
