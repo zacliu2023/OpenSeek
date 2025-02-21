@@ -17,8 +17,7 @@ experiment:
     nproc_per_node: 16 
     hostfile: ./hostfile
   envs:
-    CUDA_VISIBLE_DEVICES: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
-    #CUDA_VISIBLE_DEVICES: 0,1,2,3,4,5,6,7
+    CUDA_VISIBLE_DEVICES: 0,1,2,3,4,5,6,7
     CUDA_DEVICE_MAX_CONNECTIONS: 1
     CCL_IB_DISABLE: 0
     NCCL_IB_CUDA_SUPPORT: 1
@@ -41,16 +40,7 @@ experiment:
     IXCCL_MIX_NV: 1
     IXCCL_FUSED_ENABLE: 0
     NCCL_IB_DISABLE: 0
-    NCCL_IB_HCA: mlx5_2,mlx5_8
-    A800:
-      CUDA_VISIBLE_DEVICES: 0,1,2,3,4,5,6,7
-      NCCL_SOCKET_IFNAME: eth0
-      GLOO_SOCKET_IFNAME: eth0
-      OPAL_PREFIX: /opt/hpcx/ompi
-      PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION: python
-      LD_LIBRARY_PATH: /usr/local/lib/python3.10/dist-packages/torch/lib:/usr/local/lib/python3.10/dist-packages/torch_tensorrt/lib:/usr/local/cuda/compat/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64
-      PATH: /usr/local/nvm/versions/node/v16.20.2/bin:/usr/local/lib/python3.10/dist-packages/torch_tensorrt/bin:/usr/local/mpi/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/ucx/bin:/opt/tensorrt/bin
-    action: run
+    NCCL_IB_HCA: mlx5_2,mlx5_8action: run
 
 hydra:
   run:
