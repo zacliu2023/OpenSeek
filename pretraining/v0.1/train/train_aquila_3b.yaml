@@ -25,16 +25,13 @@ system:
     save_interval: 1193 #2385
   
   hetero:
-    enable_hetero: True
+    enable_hetero: False
     hetero_use_cpu_communication: False
     use_partional_reduce_for_shared_embedding: False
     # mesh format [tp1,cp1,ep1,dp1,pp1,(tp2,cp2...)]
 
     hetero_pipeline_layer_split: [36]
-    #hetero_pipeline_layer_split: [18,18]
-    #hetero_process_meshes: [1, 1, 1, 32, 1, 1,1,1,32,1]
     hetero_process_meshes: [1, 1, 1, 64, 1]
-    #hetero_device_types: ["B150","B150"]
     hetero_device_types: ["A800"]
 
     standalone_embedding_stage: False
