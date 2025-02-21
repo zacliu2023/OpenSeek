@@ -5,8 +5,6 @@ defaults:
 experiment:
   exp_name: aquila_3b_exp02
   exp_dir: ${experiment.exp_name}
-  cmds:
-    before_start: export PYTHONPATH=/usr/local/corex-4.1.1/lib64/python3/dist-packages
   task:
     type: train
     backend: megatron
@@ -52,15 +50,7 @@ experiment:
       PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION: python
       LD_LIBRARY_PATH: /usr/local/lib/python3.10/dist-packages/torch/lib:/usr/local/lib/python3.10/dist-packages/torch_tensorrt/lib:/usr/local/cuda/compat/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64
       PATH: /usr/local/nvm/versions/node/v16.20.2/bin:/usr/local/lib/python3.10/dist-packages/torch_tensorrt/bin:/usr/local/mpi/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/ucx/bin:/opt/tensorrt/bin
-    #PATH: /usr/local/nvm/versions/node/v16.20.2/bin:/usr/local/lib/python3.10/dist-packages/torch_tensorrt/bin:/usr/local/mpi/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/ucx/bin:/opt/tensorrt/bin
-    #LD_LIBRARY_PATH: /usr/local/lib/python3.10/dist-packages/torch/lib:/usr/local/lib/python3.10/dist-packages/torch_tensorrt/lib:/usr/local/cuda/compat/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 
-    B150:
-      NUMEXPR_MAX_THREADS: 64
-      NCCL_SOCKET_IFNAME: ibs2
-      GLOO_SOCKET_IFNAME: ibs2
-      LD_LIBRARY_PATH: /usr/local/corex/lib:/usr/local/corex/lib64:/usr/local/corex-4.1.1/lib64:/usr/local/openmpi/lib:/usr/local/lib
-      PATH: /usr/local/corex/bin/:/root/.cargo/bin:/usr/local/corex-4.1.1/bin:/usr/local/corex-4.1.1/lib64/python3/dist-packages/bin:/usr/local/openmpi/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-action: run
+    action: run
 
 hydra:
   run:
