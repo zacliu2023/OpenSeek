@@ -58,6 +58,26 @@ You can find a platform to showcase your talents at OpenSeek. You can contribute
   - If you have high-quality datasets, innovative algorithms, or other valuable resources and wish to contribute in non-code forms, please contact us directly to discuss collaboration methods.
 - Participate in technical discussions and documentation improvement
   - Share your insights, experiences, and suggestions to help us continuously improve project documentation and technical details.
+- Synthetic Reasoning Data Co-construction Plan
+  - We will update the [Huggingface](https://huggingface.co/datasets/BAAI/OpenSeek-Synthetic-Reasoning-Data-Examples) platform with sample data, effects, and strategies used for each version of our synthesized samples (if the strategies provided by external contributors we will cite thanks to involved team or individual). Currently recommended optimization directions for reasoning data synthesis include:
+    - Building a domain labeling system to balance data diversity:
+      - Building a code domain labeling system
+      - Math domain labeling
+      - Building a tagging system for thesis
+      - Encyclopedia domain tagging
+      - Domain Labeling for Web Pages: Evaluating and Filtering Synthetic Data Quality.
+    - Synthetic data quality evaluation and screening:
+      - Synthetic Data Quality Evaluation and Screening in Code Domain
+      - Synthetic Data Quality Assessment and Screening in Mathematics
+      - Synthetic Data Quality Assessment and Screening in Dissertation Domain
+      - Synthetic Data Quality Assessment and Screening in Encyclopedia Domain
+      - Synthetic Data Quality Assessment and Screening in Web
+    - Synthesis pipeline optimization:
+      - Synthesis Pipeline Optimization in Code
+      - Synthetic Pipeline Optimization in Mathematics
+      - Synthesis Pipeline Optimization for the Dissertation Domain
+      - Synthetic Pipeline Optimization for the Encyclopedia Domain
+      - Synthesis Pipeline Optimization for the Web Domain
 
 Let's explore the infinite possibilities of large model training with the power of open source and promote continuous technological progress!
 
@@ -101,19 +121,10 @@ The pre-training dataset is mainly composed of collected and selected open sourc
 - https://huggingface.co/datasets/bigcode/the-stack-v2
 
 ## 2. Data Synthesis
-- **General Knowledge Tagging System Construction**: Refer to the paper "Key-Point-Driven Data Synthesis with its Enhancement on Mathematical Reasoning". Based on Qwen2.5-72B, analyze common knowledge points involved in open source data in fields such as mathematics, code, and common sense Q&A, and construct a general knowledge tagging system.
-
-- **Raw Corpus Annotation and Filtering**: Combine the knowledge tagging system and apply Qwen2.5-72B to tag the corpus. Sample and distinguish between corpus suitable for simple QA synthesis and those suitable for long CoT QA synthesis based on article knowledge point types.
-
-- **Pre-training QA Data Synthesis**
-  1. Simple QA Synthesis: Extract Question-Answer pairs from raw corpus based on open source models.
-  2. Long-CoT-Backward Data Synthesis: Segment and summarize original documents, organize CoT processes, and summarize queries. Use {Query, CoT process, original document} as a training sample.
-  3. Long-CoT-Forward Data Synthesis: On the basis of Backward data synthesis, call open source strong reasoning models to optimize and refine the CoT process in Backward data, and provide high-quality CoT answers corresponding to the query. Use {Query, optimized CoT process, model answer} as a training sample.
-  4. Long-CoT-RAG Data Synthesis: Refer to the paper "Search-o1: Agentic Search-Enhanced Large Reasoning Models". Collect open source instructions and provide high-quality responses to instructions using inference + RAG methods.
-
-- **RL Data**: Based on the general knowledge tagging system, further sample high-quality reasoning type data (mathematics, code, difficult common sense, etc.) and non-reasoning data (writing, translation, etc.) from synthetic data.
-
-- **Quality Filtering**: Use reward models, rule verification, etc., to score and filter data quality.
+- **Preliminary Reasoning Data Synthesis**: semantically segment, summarize, organize CoT process, and summarize queries on the original pre-trained documents. take {Query, CoT process, Original document} as one training sample.
+- **Labeling system construction**: build labeling system by domain (code, math, general knowledge, etc.) to balance data diversity.
+- **Synthesized Data Quality Evaluation and Filtering**: Evaluate the quality of synthesized data based on rules, models, etc., and screen out low-quality data.
+- **Synthesis Pipeline Optimization**: Optimize the existing synthesis prompt or synthesis pipeline, re-synthesize based on the first version of reasoning data, etc. to increase the quality of reasoning data.
 
 ## 3. Data Preprocessing
 
