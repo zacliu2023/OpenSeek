@@ -78,7 +78,25 @@ You can find a platform to showcase your talents at OpenSeek. You can contribute
       - Synthesis Pipeline Optimization for the Paper (Arxiv) Domain
       - Synthetic Pipeline Optimization for the Wiki Domain
       - Synthesis Pipeline Optimization for the Webpage Domain
+  - Foundational Pretraining Data Plan
+    - We will continuously update our datasets, performance results, and data construction methodologies on Hugging Face for each version across multiple domains. If the construction methodology is contributed by external collaborators, we will acknowledge and credit the respective teams or individuals.The recommended directions for dataset iteration include:
 
+      - Building High-Quality Web Datasets
+        - Manual validation of dataset sample quality
+        - Benchmark-based Decontamination for web datasets
+        - Multi-dimensional quality definition and scoring for web data
+
+      - Building High-Quality Code Datasets
+        - Basic filtering and quality filtering
+        - Deduplication
+        - Decontamination
+
+      - Building High-Quality Mathematical Datasets
+        - Basic filtering and quality filtering
+        - Deduplication
+        - Decontamination
+
+🚀 This README clearly explains the collaborative data construction approach and the recommended iterations for dataset improvement. Let me know if you need any modifications! 😊
 Let's explore the infinite possibilities of large model training with the power of open source and promote continuous technological progress!
 
 <div align="center">
