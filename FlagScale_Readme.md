@@ -42,9 +42,9 @@ FlagScale leverages [Hydra](https://github.com/facebookresearch/hydra) for confi
 
 In the OpenSeek project, we have open-sourced a DeepSeek model with a total parameter count of 16B and an activated parameter count of 2.4B. This model has been thoroughly validated on real-world datasets, and the loss curve will be released shortly.
 
-1. **Experiment-level YAML**: The experiment-level YAML file defines the experiment directory, backend engine, task type, and other related environmental configurations. [config_deepseek_v3.yaml](https://github.com/FlagOpen/FlagScale/blob/deed35ea8bdc7ed322caf91a44f80dd633a63113/examples/deepseek_v3/conf/config_deepseek_v3.yaml)
+1. **Experiment-level YAML**: The experiment-level YAML file defines the experiment directory, backend engine, task type, and other related environmental configurations. [config_deepseek_v3.yaml](https://github.com/FlagOpen/FlagScale/blob/main/examples/deepseek_v3/conf/config_deepseek_v3.yaml)
 
-2. **Task-level YAML**: The task-level YAML file specifies the model, dataset, and parameters for specific tasks such as training or inference. [train_deepseek_v3.yaml](https://github.com/FlagOpen/FlagScale/blob/deed35ea8bdc7ed322caf91a44f80dd633a63113/examples/deepseek_v3/conf/train/train_deepseek_v3.yaml)
+2. **Task-level YAML**: The task-level YAML file specifies the model, dataset, and parameters for specific tasks such as training or inference. [train_deepseek_v3.yaml](https://github.com/FlagOpen/FlagScale/blob/main/examples/deepseek_v3/conf/train/train_deepseek_v3.yaml)
 
 ## Model Checkpoint conversion
 
