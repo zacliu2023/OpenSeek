@@ -170,16 +170,18 @@ The OpenSeek project uses [FlagScale](https://github.com/FlagOpen/FlagScale.git)
 - **Computation and Communication Scheduling Optimization**: Develop general computation and communication scheduling technologies suitable for more chips, enhancing cross-hardware platform compatibility and computational efficiency.
 - **Low Precision Training Optimization**: Explore more stable training schemes for low precision numerical formats like FP8 and develop corresponding operator optimizations to reduce computational costs and improve training stability.
 
+Through these technological innovations, we hope to promote the efficiency, compatibility, and scalability of distributed training systems, providing stronger support for large-scale AI training.
+
 <div align="center">
   <img src="./flagscale.png" alt="FlagScale Architecture" width="600">
 </div>
 
 
-Through these technological innovations, we hope to promote the efficiency, compatibility, and scalability of distributed training systems, providing stronger support for large-scale AI training.
+## Installation, usage and contribution guide of FlagScale
+For the installation and usage of FlagScale, and the progress of framework-related work and detailed tasks within the OpenSeek project, as well as the process for developers to contribute code to FlagScale, please refer to [Getting_Started_with_FlagScale](./FlagScale_Usage.md)
 
-For the installation and usage of FlagScale, the progress of framework-related work and detailed tasks within the OpenSeek project, as well as the process for developers to contribute code to FlagScale, please refer to [Getting_Started_with_FlagScale](./FlagScale_Readme.md)
+Thank you for your contribution.
 
-Thank you for considering contributing to FlagScale! Your contributions are greatly appreciated and help us improve the project for everyone.
 
 # 🚀 Training
 
