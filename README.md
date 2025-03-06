@@ -61,23 +61,23 @@ You can find a platform to showcase your talents at OpenSeek. You can contribute
 - Synthetic Reasoning Data Co-construction Plan
   - We will update the [Huggingface](https://huggingface.co/datasets/BAAI/OpenSeek-Synthetic-Reasoning-Data-Examples) platform with sample data, effects, and strategies used for each version of our synthesized samples (if the strategies provided by external contributors we will cite thanks to involved team or individual). Currently recommended optimization directions for reasoning data synthesis include:
     - Building a domain labeling system to balance data diversity:
-      - Building a code domain labeling system
-      - Math domain labeling
-      - Building a tagging system for thesis
-      - Encyclopedia domain tagging
-      - Domain Labeling for Web Pages: Evaluating and Filtering Synthetic Data Quality.
+      - Labeling system in Code Domain
+      - Labeling system in Math Domain
+      - Labeling system in Paper (Arxiv) Domain
+      - Labeling system in Wiki Domain
+      - Labeling system in Webpage Domain
     - Synthetic data quality evaluation and screening:
       - Synthetic Data Quality Evaluation and Screening in Code Domain
-      - Synthetic Data Quality Assessment and Screening in Mathematics
-      - Synthetic Data Quality Assessment and Screening in Dissertation Domain
-      - Synthetic Data Quality Assessment and Screening in Encyclopedia Domain
-      - Synthetic Data Quality Assessment and Screening in Web
+      - Synthetic Data Quality Assessment and Screening in Math Damain
+      - Synthetic Data Quality Assessment and Screening in Paper (Arxiv) Domain
+      - Synthetic Data Quality Assessment and Screening in Wiki Domain
+      - Synthetic Data Quality Assessment and Screening in Webpage Domain
     - Synthesis pipeline optimization:
-      - Synthesis Pipeline Optimization in Code
-      - Synthetic Pipeline Optimization in Mathematics
-      - Synthesis Pipeline Optimization for the Dissertation Domain
-      - Synthetic Pipeline Optimization for the Encyclopedia Domain
-      - Synthesis Pipeline Optimization for the Web Domain
+      - Synthesis Pipeline Optimization in Code Domain
+      - Synthetic Pipeline Optimization in Math Domain
+      - Synthesis Pipeline Optimization for the Paper (Arxiv) Domain
+      - Synthetic Pipeline Optimization for the Wiki Domain
+      - Synthesis Pipeline Optimization for the Webpage Domain
 
 Let's explore the infinite possibilities of large model training with the power of open source and promote continuous technological progress!
 
