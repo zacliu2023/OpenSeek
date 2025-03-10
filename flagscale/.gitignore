@@ -1,0 +1,17 @@
+__pycache__
+*.so
+build
+.coverage_*
+*.egg-info
+*~
+slurm*
+logs
+.vscode
+log_file/*
+outputs
+*.log
+*.out
+megatron/megatron/energon
+
+# test results
+tests/functional_tests/test_cases/*/*/results_test
