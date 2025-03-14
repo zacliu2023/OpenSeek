@@ -1,6 +1,6 @@
 # Exact Substring Deduplication Pipeline
 
-This repository provides a pipeline for performing exact substring deduplication on text datasets. It integrates the Rust-based tool [`deduplicate-text-datasets`](https://github.com/google-research/deduplicate-text-datasets) with a set of Python scripts to efficiently remove duplicate substrings, making it ideal for cleaning large datasets used in natural language processing tasks.
+We provide a pipeline for performing exact substring deduplication on text datasets. It integrates the Rust-based tool [`deduplicate-text-datasets`](https://github.com/google-research/deduplicate-text-datasets) with a set of Python scripts to efficiently remove duplicate substrings, making it ideal for cleaning large datasets used in natural language processing tasks.
 
 ## Introduction
 
@@ -37,7 +37,7 @@ Exact substring deduplication identifies and removes identical substrings within
    This compiles the `dedup_dataset` executable, located at `./target/release/dedup_dataset`.
 
 2. **Integrate Scripts**:
-   Copy all scripts from the `scripts` directory of this repository to `deduplicate-text-datasets/scripts`. If prompted, overwrite any existing files with the same names:
+   Copy all scripts from the `scripts` directory to `deduplicate-text-datasets/scripts`. If prompted, overwrite any existing files with the same names:
 
    ```bash
    cp -r ./scripts/* ./deduplicate-text-datasets/scripts/
