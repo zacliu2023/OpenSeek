@@ -2,6 +2,8 @@
 
 A text quality classification tool based on FastText for evaluating and filtering text data. This tool supports training models to classify text as high-quality (positive) or low-quality (negative), and provides utilities for text preprocessing, model training, and prediction.
 
+> Notes: We add some stopwords based on the top frequency of the predicted high-quality data that might influence the model performance during our iteration. If you want to use the original stopwords, please **remove** the **add_stopwords.json** file and **emoji_stopwords.txt** file in fasttext_process.py during your process.
+
 ## Features
 
 - Text preprocessing with stopword removal and word segmentation
@@ -98,3 +100,4 @@ The tool uses a centralized configuration dictionary in `fasttext_process.py` th
 - Learning rate: 0.1 (default)
 - Epochs: 25 (default)
 - Vector dimension: 100 (default)
+
