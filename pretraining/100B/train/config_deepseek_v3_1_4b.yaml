@@ -1,10 +1,10 @@
-# DeepSeek 16B, 2.4A Model
+# DeepSeek 1_4B, 0_4A Model
 defaults:
   - _self_
-  - train: train_deepseek_v3_3b.yaml
+  - train: train_deepseek_v3_1_4b.yaml
 
 experiment:
-  exp_name: Aquila-3B-A0_8B-Baseline
+  exp_name: Aquila-1_4B-A0_4B-Baseline
   seed: 42
   save_steps: 600
   load: null
