@@ -160,6 +160,6 @@ Together, we can explore the frontiers of large language models and drive techno
 - Model weights are licensed under Apache 2.0
 - Data is licensed under CC BY-SA 4.0
 
-**Note**: Full reproduction requires at least 8 H100 GPUs, and it is recommended to use the SLURM cluster management system. Datasets need to be applied for or generated independently, and some sensitive data is not included in the open source package.
+
 
 
