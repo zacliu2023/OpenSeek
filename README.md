@@ -40,6 +40,9 @@ Discussions, proposals, and PRs regarding dataset implementations, training opti
 
 
 # 📢 News
+- 🔥[05/06/2025] **Data group**-release bilingual pretrainning dataset CCI4.0-M2-V1 <u>*[[readme](Docs/README_CCI4.0_M2_V1.md)]*</u>, **Algo group**-release the pretrained nodel OpenSeek-Small V1 <u>*[[readme](Docs/README_OPENSEEK_SMALL_V1.md)][[download](Docs/OpenSeek-Small_V1_download_link)]*.</u>
+- 🔥[03/20/2025] #4 online meetup 19:00-20:00 : https://meeting.tencent.com/crm/NL4rAjg489
+- 🔥[03/20/2025] #3 online meetup 19:00-20:00 ：https://meeting.tencent.com/crm/NXwDAyLG59
 - 🔥[03/06/2025] #2 online meetup 19:00-20:00 ：https://meeting.tencent.com/crm/2pxo8BBDb7
 - 🔥[02/25/2025] #1 online meetup 18:00-19:00 ：https://meeting.tencent.com/v2/cloud-record/share?id=e188482b-0105-43f9-b8e7-cf5f1e4d136b&from=3&is-single=false&record_type=2
 - 🔥[02/13/2025] Completed validation of the OpenSeek-PT-1T dataset on a 3B size model, released model checkpoints, data ratios, training codes with hyperparameters, and wandb logs.
