@@ -25,6 +25,11 @@ OpenSeek是由北京智源人工智能研究院（BAAI）发起的开源项目�
 
 **项目地址：** https://github.com/FlagAI-Open/OpenSeek
 # 📢News
+- 🔥[05/06/2025] **数据组**-发布中英双语预训练数据集 CCI4.0-M2-V1 <u>*[[readme](Docs/README_CCI4.0_M2_V1.md)]*</u>, **算法组**-发布小尺寸模型 OpenSeek-Small V1 <u>*[[readme](Docs/README_OPENSEEK_SMALL_V1.md)][[download](Docs/OpenSeek-Small_V1_download_link)]*.</u>
+- 🔥[03/20/2025] #4 在线会议 19:00-20:00 : https://meeting.tencent.com/crm/NL4rAjg489
+- 🔥[03/20/2025] #3 在线会议 19:00-20:00 ：https://meeting.tencent.com/crm/NXwDAyLG59
+- 🔥[03/06/2025] #2 在线会议 19:00-20:00 ：https://meeting.tencent.com/crm/2pxo8BBDb7
+- 🔥[02/25/2025] #1 在线会议 18:00-19:00 ：https://meeting.tencent.com/v2/cloud-record/share?id=e188482b-0105-43f9-b8e7-cf5f1e4d136b&from=3&is-single=false&record_type=2
 - 🔥[02/13/2025] 完成3B尺寸模型上验证了OpenSeek-PT-1T数据集效果, release 模型ckpt,数据配比,训练代码与超参以及wandb
 # 👁 项目核心亮点
 - 高质量数据开源开放
