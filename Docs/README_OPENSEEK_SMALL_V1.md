@@ -62,6 +62,10 @@ OpenSeek-Small v1 is the first-stage production model from the OpenSeek project,
 |                                 | Average                     | 0.3466             |
 |                                 | Average (w/o Math)          | 0.4028             |
 
+## Ablation Exp
+Ablation studies are conducted on the dataset using a 500M-sized model.
+![Ablation Exp](CCI4.0_M2_v1_Ablation.jpeg)
+
 ## Usage Instructions
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
