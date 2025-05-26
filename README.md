@@ -47,6 +47,73 @@ Discussions, proposals, and PRs regarding dataset implementations, training opti
 - 🔥[02/25/2025] #1 online meetup 18:00-19:00 ：https://meeting.tencent.com/v2/cloud-record/share?id=e188482b-0105-43f9-b8e7-cf5f1e4d136b&from=3&is-single=false&record_type=2
 - 🔥[02/13/2025] Completed validation of the OpenSeek-PT-1T dataset on a 3B size model, released model checkpoints, data ratios, training codes with hyperparameters, and wandb logs.
 
+# 🚗 Getting Started
+## Preparation
+1. Clone this repository:
+```shell
+git clone https://github.com/FlagAI-Open/OpenSeek.git path/to/OpenSeek
+```
+2. Install the [FlagScale](https://github.com/FlagOpen/FlagScale) tool (skip this step if already installed):
+- Using Docker (Recommended):
+```shell
+
+```
+- From Source:
+```shell
+# Clone the repository
+git clone https://github.com/FlagOpen/FlagScale.git path/to/FlagScale
+
+# Install the requirements
+cd path/to/FlagScale/install
+./install-requirements.sh --env train
+./install-requirements.sh --env inference
+
+# Install the packages with customized extensions
+cd vllm
+pip install .
+
+pip install -e ./megatron-energon
+cp -r megatron-energon/src/megatron/energon megatron/megatron
+```
+- For more details, see [FlagScale](https://github.com/FlagOpen/FlagScale) or [readme](docs/FlagScale_Usage.md).
+
+3. Download the [OpenSeek-Pretrain-100B](https://huggingface.co/datasets/BAAI/OpenSeek-Pretrain-100B) dataset from Huggingface.
+
+## Running the Baseline
+1. Copy the `openseek/algorithm/run_exp.sh` script to the FlagScale root directory:
+```shell
+cp path/to/OpenSeek/openseek/algorithm/run_exp.sh path/to/FlagScale
+```
+
+2. Modify the configuration path in `run_exp.sh`. Change line 30 to
+```shell
+python3 run.py --config-path path/to/OpenSeek/configs/OpenSeek-Small-v1-Baseline --config-name $2
+```
+
+3. Navigate to the FlagScale root directory and run the baseline:
+```shell
+cd path/to/FlagScale
+bash run_exp.sh start config_deepseek_v3_1_4b.yaml
+```
+
+4. For detailed explanations of the experiment configuration, see [Experiment Configuration](#experiment-configuration).
+
+## Experiment Logs
+
+Experiment logs will be output to the Aquila-1_4B-A0_4B-Baseline/logs directory. For example, when training with two machines, each having eight GPUs:
+
+- The experiment startup log is located in the path corresponding to the first GPU on the first host. For example:
+
+```
+Aquila-1_4B-A0_4B-Baseline/logs/details/host_0_xxx.xxx.xxx.xxx/20250423_185352.022338/default_atongk86/attempt_0/0
+```
+
+- The training loss log is located in the path corresponding to the last GPU on the last host. For example:
+
+```
+Aquila-1_4B-A0_4B-Baseline/logs/details/host_1_yyy.yyy.yyy.yyy/20250423_185352.918040/default_zcuhq1c7/attempt_0/7
+```
+
 # 📚 Data
 
 ## CCI4.0-M2 v1
@@ -81,44 +148,42 @@ Your can find more details about data [here](docs/Data.md).
 # 🖥️ System
 TODO
 
-# 🚗 Getting Started
+# 🔋 Advanced Usage
 
-## Installation
+## Experiment Configuration
 
-You need to install FlagScale first following these steps:
+The baseline configuration is located in the `configs/OpenSeek-Small-v1-Baseline` directory, which includes:
 
-1. Clone the repository:
-```bash
-git clone https://github.com/FlagOpen/FlagScale.git
-```
+- `config_deepseek_v3_1_4b.yaml`: This is the experiment configuration file, defining the experiment directory, backend engine, task type, and environment settings.
 
-2. Navigate to the FlagScale/install directory and run the requirement scripts to set up flagscale-train and flagscale-inference conda environments:
-```bash
-cd FlagScale/install
-./install-requirements.sh --env train
-./install-requirements.sh --env inference
-```
+- `train/train_deepseek_v3_1_4b.yaml`: This is the job configuration (job config) file, specifying model parameters, dataset configurations, and training-specific settings.
 
-3. Install customized packages by navigating to the vllm directory and then installing megatron-energon:
-```bash
-cd vllm
-pip install .
+To customize the experiment configuration, you can modify the baseline configuration directly (or copy it and modify):
 
-pip install -e ./megatron-energon
-cp -r megatron-energon/src/megatron/energon megatron/megatron
-```
+- Modify the `experiment.exp_name` field in the experiment configuration file. The experiment output path will be under a directory with this new name.
 
-More details can be found [here](docs/FlagScale_Usage.md).
+- Modify the `data.data_path` field in the job configuration file to use your data path and the corresponding data mixing ratios.
 
-## Training Experiment
+Modify the `run_exp.sh` script to specify the directory of your configuration and the path to your experiment configuration file.
 
-
-Scripts can be found [here](openseek/training/run_exp.sh).
+For more information, see [Advanced Configuration Guide Link](configs/README.md).
 
 ## Data Mixing Experiment
 
-More details [here](openseek/data/data_mix_exp/README.md).
+The process for conducting a data mixing experiment is as follows:
 
+1. Environment and Tool Installation: Follow the steps in the [Preparation](#preparation) section.
+
+2. Modify Experiment Configuration: Refer to the [Experiment Configuration](#experiment-configuration) section.
+
+3. Start the Experiment: Use the [Running the Baseline](#running-the-baseline) section as a guide for launching your modified script.
+
+4. Check Training Results: Refer to the [Experiment Logs](#experiment-logs) section.
+
+For more details, see [here](openseek/data/data_mix_exp/README.md).
+## Training Experiment
+
+TODO
 
 # 👁 Project Highlights
 - *High-Quality Data Accessibility:*
