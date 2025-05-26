@@ -47,26 +47,77 @@ Discussions, proposals, and PRs regarding dataset implementations, training opti
 - 🔥[02/25/2025] #1 online meetup 18:00-19:00 ：https://meeting.tencent.com/v2/cloud-record/share?id=e188482b-0105-43f9-b8e7-cf5f1e4d136b&from=3&is-single=false&record_type=2
 - 🔥[02/13/2025] Completed validation of the OpenSeek-PT-1T dataset on a 3B size model, released model checkpoints, data ratios, training codes with hyperparameters, and wandb logs.
 
-# Getting Started
-## Installation
-```
-git clone https://github.com/FlagAI-Open/OpenSeek.git
-cd OpenSeek
-cd flagscale/install
-./install-requirements.sh --env train
-```
-The above instructions create conda environments: `flagscale-train`, which contain the dependency environments for training.
+# 📚 Data
+
+## CCI4.0-M2 v1
+
+[CCI4.0-M2 V1](docs/README_CCI4.0_M2_V1.md) is a comprehensive multilingual dataset suite designed to support various stages of large language model training. It is composed of three targeted subsets, each serving a distinct purpose:
+
+|| CCI4.0-M2-Base v1 | CCI4.0-M2-CoT v1 | CCI4.0-M2-Extra v1 |
+|--|--|--|--|
+|Huggingface| https://huggingface.co/datasets/BAAI/CCI4.0-M2-Base-v1 | https://huggingface.co/datasets/BAAI/CCI4.0-M2-CoT-v1 | https://huggingface.co/datasets/BAAI/CCI4.0-M2-Extra-v1 |
+|Notes|This is the core pretraining subset, aimed at building general-purpose language understanding. It contains approximately 30% Chinese (from both collaborative and open-source sources) and 70% English (mainly from Nemotron-CC), with all data sourced from web pages.|This subset focuses on enhancing the model’s reasoning abilities through synthesized Chain-of-Thought (CoT) data. It provides step-by-step reasoning trajectories generated from various data sources, enabling improved performance on complex inference tasks.|Designed as a supplement to the core training data, this subset offers domain-specific knowledge to improve the model’s performance in specialized fields.|
+
+Together, these three components make CCI4.0-M2 v1 a well-rounded and scalable dataset foundation for training advanced language models across general, reasoning, and domain-specific tasks.
+
+In addition to the main suite, [OpenSeek-Pretrain-100B](docs/100B_pipeline.md) was randomly sampled from the CCI4.0-M2 v1 datasets. This 100B data subset is specifically used for experimental training purposes.
+
+Your can find more details about data [here](docs/Data.md).
 
 
 # 🚀 Training
 
+## Stage 1
 
-## Phase 1: Training
 
-| Category | Data | ckpt | Evaluation Results | Training Hyperparameters | Wandb | Discussion |
-|----------|------|------|--------------------|--------------------------|-------|------------|
-| Content  | Aquila-3B data validation model<br>OpenSeek-PT-1.3T v0.1 | -- | ![Eval](pretraining/v0.1/eval/3B-results.jpeg)<br> | seqlen: 4096<br>gbs: 8M<br>lr: 3.0e-3<br>lr_decay_style: WSD | ![Loss](pretraining/v0.1/train/3B-loss.png)<br>https://wandb.ai/aquila3/OpenSeek-3B-v0.1/runs/aquila_3b_exp02-rank-63 | -- |
+| | OpenSeek-Small-v1-Baseline | OpenSeek-Small-v1 | OpenSeek-Mid-v1 |
+|--|--|--|--|
+|Parameter size| 1.4B (0.4B active) | 1.4B (0.4B active) | 16B (3B active) |
+|Number of tokens|100B|720B|200B|
+|Checkpoint|https://huggingface.co/BAAI/OpenSeek-Small-v1-Baseline|https://huggingface.co/BAAI/OpenSeek-Small-v1|https://huggingface.co/BAAI/OpenSeek-Mid-v1|
+|Training config|[config_deepseek_v3_1_4b.yaml](configs/OpenSeek-Small-v1-Baseline/config_deepseek_v3_1_4b.yaml) [train_deepseek_v3_3b_1330B.yaml](configs/OpenSeek-Small-v1/train_deepseek_v3_3b_1330B.yaml)|[config_deepseek_v3_3b_1330B.yaml](configs/OpenSeek-Small-v1/config_deepseek_v3_3b_1330B.yaml) [train_deepseek_v3_3b_1330B.yaml](configs/OpenSeek-Small-v1/train_deepseek_v3_3b_1330B.yaml)|[config_deepseek_v3_16b.yaml](configs/OpenSeek-Mid-v1/config_deepseek_v3_16b.yaml) [train_deepseek_v3_16b.yaml](configs/OpenSeek-Mid-v1/train_deepseek_v3_16b.yaml)|
+|Notes|We sampled 100 billion tokens from the CCI4.0 dataset and trained a 1.4B-parameter MoE model with 0.4B active parameters. This model, along with the dataset, is open-sourced as a baseline for future experiments in areas such as dataset construction, algorithmic strategies, and parallel training frameworks.|OpenSeek-Small v1 is the first-stage production model from the OpenSeek project, designed as a foundation for next-generation language models. The model is trained based on the CCI4.0 dataset, with a total training volume of 720 billion tokens. Among them, approximately 10% are Chinese and 60% are English, while the remaining data comes from various sources such as books, academic papers, encyclopedias, mathematics, code, and synthetic data.|The OpenSeek-Mid-v1 model adopts a fine-grained coefficient MoE architecture with 16 billion total parameters and 3 billion active parameters, similar to the structures of DeepSeek-V2-Lite and Moonlight-16B-A3B. Based on this architecture, we conducted experiments on training hyperparameters, the Multiple Token Predictor submodule, and data mixing ratios. Under the final training configuration, the model was trained on 200 billion tokens, and the resulting weights are released as a temporary and experimental checkpoint.|
 
+# 🖥️ System
+TODO
+
+# 🚗 Getting Started
+
+## Installation
+
+You need to install FlagScale first following these steps:
+
+1. Clone the repository:
+```bash
+git clone https://github.com/FlagOpen/FlagScale.git
+```
+
+2. Navigate to the FlagScale/install directory and run the requirement scripts to set up flagscale-train and flagscale-inference conda environments:
+```bash
+cd FlagScale/install
+./install-requirements.sh --env train
+./install-requirements.sh --env inference
+```
+
+3. Install customized packages by navigating to the vllm directory and then installing megatron-energon:
+```bash
+cd vllm
+pip install .
+
+pip install -e ./megatron-energon
+cp -r megatron-energon/src/megatron/energon megatron/megatron
+```
+
+More details can be found [here](docs/FlagScale_Usage.md).
+
+## Training Experiment
+
+
+Scripts can be found [here](openseek/training/run_exp.sh).
+
+## Data Mixing Experiment
+
+More details [here](openseek/data/data_mix_exp/README.md).
 
 
 # 👁 Project Highlights
