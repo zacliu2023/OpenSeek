@@ -64,14 +64,6 @@ git clone https://github.com/FlagOpen/FlagScale.git
 # Install the requirements
 cd FlagScale/install
 ./install-requirements.sh --env train
-# ./install-requirements.sh --env inference
-
-# Install the packages with customized extensions
-# cd vllm
-# pip install .
-
-# pip install -e ./megatron-energon
-# cp -r megatron-energon/src/megatron/energon megatron/megatron
 ```
 
 - Using Docker (coming soon)
