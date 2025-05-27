@@ -124,81 +124,81 @@ data:
   # exp: dist02
   data_path:
     - 7.76
-    - OpenSeek/Nemotron-CC-medium-actual-actual-mid_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-medium-actual-actual-mid_text_document
     - 1.08
-    - OpenSeek/Nemotron-CC-low-synthetic-wrap_medium-mid_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-low-synthetic-wrap_medium-mid_text_document
     - 3.20
-    - OpenSeek/Nemotron-CC-high-synthetic-knowledge_list-mid_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-knowledge_list-mid_text_document
     - 0.07
-    - OpenSeek/Nemotron-CC-high-synthetic-extract_knowledge-low_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-extract_knowledge-low_text_document
     - 2.16
-    - OpenSeek/Nemotron-CC-high-synthetic-diverse_qa_pairs-low_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-diverse_qa_pairs-low_text_document
     - 0.64
-    - OpenSeek/Nemotron-CC-high-synthetic-distill-low_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-distill-low_text_document
     - 2.05
-    - OpenSeek/Nemotron-CC-high-actual-actual-mid_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-actual-actual-mid_text_document
     - 1.59
-    - OpenSeek/Nemotron-CC-high-synthetic-distill-high_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-distill-high_text_document
     - 6.18
-    - OpenSeek/Nemotron-CC-high-synthetic-wrap_medium-mid_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-wrap_medium-mid_text_document
     - 6.43
-    - OpenSeek/Nemotron-CC-high-synthetic-extract_knowledge-high_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-extract_knowledge-high_text_document
     - 4.67
-    - OpenSeek/Nemotron-CC-high-synthetic-diverse_qa_pairs-high_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-diverse_qa_pairs-high_text_document
     - 0.67
-    - OpenSeek/Nemotron-CC-high-actual-actual-low_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-actual-actual-low_text_document
     - 4.48
-    - OpenSeek/Nemotron-CC-medium-actual-actual-low_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-medium-actual-actual-low_text_document
     - 0.30
-    - OpenSeek/Nemotron-CC-low-synthetic-wrap_medium-low_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-low-synthetic-wrap_medium-low_text_document
     - 3.89
-    - OpenSeek/Nemotron-CC-high-synthetic-wrap_medium-high_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-wrap_medium-high_text_document
     - 0.74
-    - OpenSeek/Nemotron-CC-high-synthetic-knowledge_list-low_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-knowledge_list-low_text_document
     - 2.22
-    - OpenSeek/Nemotron-CC-high-synthetic-extract_knowledge-mid_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-extract_knowledge-mid_text_document
     - 7.58
-    - OpenSeek/Nemotron-CC-high-synthetic-diverse_qa_pairs-mid_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-diverse_qa_pairs-mid_text_document
     - 2.32
-    - OpenSeek/Nemotron-CC-high-synthetic-distill-mid_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-distill-mid_text_document
     - 1.26
-    - OpenSeek/Nemotron-CC-high-actual-actual-high_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-actual-actual-high_text_document
     - 2.20
-    - OpenSeek/Nemotron-CC-medium-actual-actual-high_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-medium-actual-actual-high_text_document
     - 0.17
-    - OpenSeek/Nemotron-CC-low-synthetic-wrap_medium-high_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-low-synthetic-wrap_medium-high_text_document
     - 0.65
-    - OpenSeek/Nemotron-CC-high-synthetic-wrap_medium-low_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-wrap_medium-low_text_document
     - 1.88
-    - OpenSeek/Nemotron-CC-high-synthetic-knowledge_list-high_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-knowledge_list-high_text_document
     - 9.65
-    - OpenSeek/zh_cc_text_document
+    - ${experiment.dataset_base_dir}/zh_cc_text_document
     - 3.43
-    - OpenSeek/code_text_document
+    - ${experiment.dataset_base_dir}/code_text_document
     - 0.83
-    - OpenSeek/math_text_document
+    - ${experiment.dataset_base_dir}/math_text_document
     - 1.98
-    - OpenSeek/books_text_document
+    - ${experiment.dataset_base_dir}/books_text_document
     - 0.29
-    - OpenSeek/wiki_text_document
+    - ${experiment.dataset_base_dir}/wiki_text_document
     - 0.32
-    - OpenSeek/arxiv_text_document
+    - ${experiment.dataset_base_dir}/arxiv_text_document
     - 0.19
-    - OpenSeek/stack_text_document
+    - ${experiment.dataset_base_dir}/stack_text_document
     - 9.82
-    - OpenSeek/cot_synthesis_CC_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis_CC_text_document
     - 1.32
-    - OpenSeek/cot_synthesis_code_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis_code_text_document
     - 2.19
-    - OpenSeek/cot_synthesis_math_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis_math_text_document
     - 0.83
-    - OpenSeek/cot_synthesis_wiki_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis_wiki_text_document
     - 4.15
-    - OpenSeek/cot_synthesis_arxiv_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis_arxiv_text_document
     - 0.46
-    - OpenSeek/cot_synthesis_OpenSource_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis_OpenSource_text_document
     - 0.31
-    - OpenSeek/pes2o_text_document
+    - ${experiment.dataset_base_dir}/pes2o_text_document
 
   split: 1
   no_mmap_bin_files: true

@@ -117,173 +117,173 @@ data:
   # exp: baseline
   data_path:
     - 1.1068
-    - OpenSeek/100B_dataset/Nemotron-CC-high-actual-actual-high/part_142_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-actual-actual-high/part_142_text_document
     - 0.3577
-    - OpenSeek/100B_dataset/Nemotron-CC-high-actual-actual-low/part_62_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-actual-actual-low/part_62_text_document
     - 0.7775
-    - OpenSeek/100B_dataset/Nemotron-CC-high-actual-actual-mid/part_189_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-actual-actual-mid/part_189_text_document
     - 0.2859
-    - OpenSeek/100B_dataset/Nemotron-CC-high-synthetic-distill-high/part_76_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-distill-high/part_76_text_document
     - 0.1672
-    - OpenSeek/100B_dataset/Nemotron-CC-high-synthetic-distill-low/part_124_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-distill-low/part_124_text_document
     - 0.2339
-    - OpenSeek/100B_dataset/Nemotron-CC-high-synthetic-distill-mid/part_29_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-distill-mid/part_29_text_document
     - 0.5397
-    - OpenSeek/100B_dataset/Nemotron-CC-high-synthetic-diverse_qa_pairs-high/part_244_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-diverse_qa_pairs-high/part_244_text_document
     - 0.4064
-    - OpenSeek/100B_dataset/Nemotron-CC-high-synthetic-diverse_qa_pairs-low/part_150_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-diverse_qa_pairs-low/part_150_text_document
     - 0.5005
-    - OpenSeek/100B_dataset/Nemotron-CC-high-synthetic-diverse_qa_pairs-mid/part_444_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-diverse_qa_pairs-mid/part_444_text_document
     - 0.4616
-    - OpenSeek/100B_dataset/Nemotron-CC-high-synthetic-extract_knowledge-high/part_498_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-extract_knowledge-high/part_498_text_document
     - 0.0670
-    - OpenSeek/100B_dataset/Nemotron-CC-high-synthetic-extract_knowledge-low/part_10_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-extract_knowledge-low/part_10_text_document
     - 0.3429
-    - OpenSeek/100B_dataset/Nemotron-CC-high-synthetic-extract_knowledge-mid/part_144_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-extract_knowledge-mid/part_144_text_document
     - 0.2610
-    - OpenSeek/100B_dataset/Nemotron-CC-high-synthetic-knowledge_list-high/part_86_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-knowledge_list-high/part_86_text_document
     - 0.1824
-    - OpenSeek/100B_dataset/Nemotron-CC-high-synthetic-knowledge_list-low/part_133_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-knowledge_list-low/part_133_text_document
     - 0.2313
-    - OpenSeek/100B_dataset/Nemotron-CC-high-synthetic-knowledge_list-mid/part_139_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-knowledge_list-mid/part_139_text_document
     - 0.8237
-    - OpenSeek/100B_dataset/Nemotron-CC-high-synthetic-wrap_medium-high/part_47_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-wrap_medium-high/part_47_text_document
     - 0.2866
-    - OpenSeek/100B_dataset/Nemotron-CC-high-synthetic-wrap_medium-low/part_11_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-wrap_medium-low/part_11_text_document
     - 0.6670
-    - OpenSeek/100B_dataset/Nemotron-CC-high-synthetic-wrap_medium-mid/part_97_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-high-synthetic-wrap_medium-mid/part_97_text_document
     - 0.4657
-    - OpenSeek/100B_dataset/Nemotron-CC-low-synthetic-wrap_medium-high/part_43_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-low-synthetic-wrap_medium-high/part_43_text_document
     - 0.2005
-    - OpenSeek/100B_dataset/Nemotron-CC-low-synthetic-wrap_medium-low/part_10_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-low-synthetic-wrap_medium-low/part_10_text_document
     - 0.4317
-    - OpenSeek/100B_dataset/Nemotron-CC-low-synthetic-wrap_medium-mid/part_164_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-low-synthetic-wrap_medium-mid/part_164_text_document
     - 1.1397
-    - OpenSeek/100B_dataset/Nemotron-CC-medium-actual-actual-high/part_92_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-medium-actual-actual-high/part_92_text_document
     - 0.6782
-    - OpenSeek/100B_dataset/Nemotron-CC-medium-actual-actual-low/part_113_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-medium-actual-actual-low/part_113_text_document
     - 0.9175
-    - OpenSeek/100B_dataset/Nemotron-CC-medium-actual-actual-mid/part_563_text_document
+    - ${experiment.dataset_base_dir}/Nemotron-CC-medium-actual-actual-mid/part_563_text_document
     - 0.6414
-    - OpenSeek/100B_dataset/arxiv/007_00000_text_document
+    - ${experiment.dataset_base_dir}/arxiv/007_00000_text_document
     - 0.4696
-    - OpenSeek/100B_dataset/books/016_00007_text_document
+    - ${experiment.dataset_base_dir}/books/016_00007_text_document
     - 1.0102
-    - OpenSeek/100B_dataset/code-high/part_13_text_document
+    - ${experiment.dataset_base_dir}/code-high/part_13_text_document
     - 1.1403
-    - OpenSeek/100B_dataset/code-low/part_36_text_document
+    - ${experiment.dataset_base_dir}/code-low/part_36_text_document
     - 0.9674
-    - OpenSeek/100B_dataset/code-mid/part_37_text_document
+    - ${experiment.dataset_base_dir}/code-mid/part_37_text_document
     - 0.3755
-    - OpenSeek/100B_dataset/cot_synthesis2_CC-high/23_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis2_CC-high/23_text_document
     - 0.0499
-    - OpenSeek/100B_dataset/cot_synthesis2_CC-low/51_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis2_CC-low/51_text_document
     - 0.3608
-    - OpenSeek/100B_dataset/cot_synthesis2_CC-mid/118_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis2_CC-mid/118_text_document
     - 0.3623
-    - OpenSeek/100B_dataset/cot_synthesis2_CC-mid/176_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis2_CC-mid/176_text_document
     - 0.3704
-    - OpenSeek/100B_dataset/cot_synthesis2_CC-mid/256_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis2_CC-mid/256_text_document
     - 0.3733
-    - OpenSeek/100B_dataset/cot_synthesis2_CC-mid/320_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis2_CC-mid/320_text_document
     - 0.3631
-    - OpenSeek/100B_dataset/cot_synthesis2_CC-mid/32_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis2_CC-mid/32_text_document
     - 0.2573
-    - OpenSeek/100B_dataset/cot_synthesis2_OpenSource-high/1_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis2_OpenSource-high/1_text_document
     - 0.1638
-    - OpenSeek/100B_dataset/cot_synthesis2_OpenSource-low/2_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis2_OpenSource-low/2_text_document
     - 0.3251
-    - OpenSeek/100B_dataset/cot_synthesis2_OpenSource-mid/3_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis2_OpenSource-mid/3_text_document
     - 6.0237
-    - OpenSeek/100B_dataset/cot_synthesis2_arxiv-high/2_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis2_arxiv-high/2_text_document
     - 8.9063
-    - OpenSeek/100B_dataset/cot_synthesis2_arxiv-low/1_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis2_arxiv-low/1_text_document
     - 10.1376
-    - OpenSeek/100B_dataset/cot_synthesis2_arxiv-mid/2_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis2_arxiv-mid/2_text_document
     - 0.4598
-    - OpenSeek/100B_dataset/cot_synthesis2_code-high/4_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis2_code-high/4_text_document
     - 0.6857
-    - OpenSeek/100B_dataset/cot_synthesis2_code-low/6_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis2_code-low/6_text_document
     - 0.8990
-    - OpenSeek/100B_dataset/cot_synthesis2_code-mid/23_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis2_code-mid/23_text_document
     - 1.3135
-    - OpenSeek/100B_dataset/cot_synthesis2_math-high/12_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis2_math-high/12_text_document
     - 1.6530
-    - OpenSeek/100B_dataset/cot_synthesis2_math-low/3_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis2_math-low/3_text_document
     - 0.3536
-    - OpenSeek/100B_dataset/cot_synthesis2_math-mid/5_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis2_math-mid/5_text_document
     - 0.6314
-    - OpenSeek/100B_dataset/cot_synthesis2_wiki-high/5_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis2_wiki-high/5_text_document
     - 0.5978
-    - OpenSeek/100B_dataset/cot_synthesis2_wiki-low/5_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis2_wiki-low/5_text_document
     - 0.7909
-    - OpenSeek/100B_dataset/cot_synthesis2_wiki-mid/4_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis2_wiki-mid/4_text_document
     - 0.2225
-    - OpenSeek/100B_dataset/cot_synthesis_CC-high/74_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis_CC-high/74_text_document
     - 0.1797
-    - OpenSeek/100B_dataset/cot_synthesis_CC-low/54_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis_CC-low/54_text_document
     - 0.2042
-    - OpenSeek/100B_dataset/cot_synthesis_CC-mid/275_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis_CC-mid/275_text_document
     - 0.4081
-    - OpenSeek/100B_dataset/cot_synthesis_OpenSource-high/4_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis_OpenSource-high/4_text_document
     - 0.1659
-    - OpenSeek/100B_dataset/cot_synthesis_OpenSource-low/2_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis_OpenSource-low/2_text_document
     - 1.2828
-    - OpenSeek/100B_dataset/cot_synthesis_OpenSource-mid/6_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis_OpenSource-mid/6_text_document
     - 5.6800
-    - OpenSeek/100B_dataset/cot_synthesis_arxiv-high/2_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis_arxiv-high/2_text_document
     - 7.4907
-    - OpenSeek/100B_dataset/cot_synthesis_arxiv-low/1_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis_arxiv-low/1_text_document
     - 8.9359
-    - OpenSeek/100B_dataset/cot_synthesis_arxiv-mid/1_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis_arxiv-mid/1_text_document
     - 0.7663
-    - OpenSeek/100B_dataset/cot_synthesis_code-high/13_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis_code-high/13_text_document
     - 0.4052
-    - OpenSeek/100B_dataset/cot_synthesis_code-low/9_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis_code-low/9_text_document
     - 0.1916
-    - OpenSeek/100B_dataset/cot_synthesis_code-mid/6_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis_code-mid/6_text_document
     - 0.5074
-    - OpenSeek/100B_dataset/cot_synthesis_math-high/11_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis_math-high/11_text_document
     - 0.6437
-    - OpenSeek/100B_dataset/cot_synthesis_math-low/11_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis_math-low/11_text_document
     - 0.6406
-    - OpenSeek/100B_dataset/cot_synthesis_math-mid/29_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis_math-mid/29_text_document
     - 0.4000
-    - OpenSeek/100B_dataset/cot_synthesis_wiki-high/4_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis_wiki-high/4_text_document
     - 0.3564
-    - OpenSeek/100B_dataset/cot_synthesis_wiki-low/6_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis_wiki-low/6_text_document
     - 0.5768
-    - OpenSeek/100B_dataset/cot_synthesis_wiki-mid/3_text_document
+    - ${experiment.dataset_base_dir}/cot_synthesis_wiki-mid/3_text_document
     - 1.8165
-    - OpenSeek/100B_dataset/math-high/part_04_text_document
+    - ${experiment.dataset_base_dir}/math-high/part_04_text_document
     - 1.6940
-    - OpenSeek/100B_dataset/math-low/part_10_text_document
+    - ${experiment.dataset_base_dir}/math-low/part_10_text_document
     - 1.6311
-    - OpenSeek/100B_dataset/math-mid/part_07_text_document
+    - ${experiment.dataset_base_dir}/math-mid/part_07_text_document
     - 0.6870
-    - OpenSeek/100B_dataset/pes2o-full-train/train-0041-of-0136_text_document
+    - ${experiment.dataset_base_dir}/pes2o-full-train/train-0041-of-0136_text_document
     - 0.7387
-    - OpenSeek/100B_dataset/pes2o-full-train/train-0125-of-0136_text_document
+    - ${experiment.dataset_base_dir}/pes2o-full-train/train-0125-of-0136_text_document
     - 0.0143
-    - OpenSeek/100B_dataset/pes2o-full-val/valid-0034-of-0060_text_document
+    - ${experiment.dataset_base_dir}/pes2o-full-val/valid-0034-of-0060_text_document
     - 6.1982
-    - OpenSeek/100B_dataset/pes2o/pubmedcentral_3_text_document
+    - ${experiment.dataset_base_dir}/pes2o/pubmedcentral_3_text_document
     - 0.4229
-    - OpenSeek/100B_dataset/stack/018_00000_text_document
+    - ${experiment.dataset_base_dir}/stack/018_00000_text_document
     - 0.4202
-    - OpenSeek/100B_dataset/wiki/012_00000_text_document
+    - ${experiment.dataset_base_dir}/wiki/012_00000_text_document
     - 1.8171
-    - OpenSeek/100B_dataset/zh_cc-high-loss0/part_28_text_document
+    - ${experiment.dataset_base_dir}/zh_cc-high-loss0/part_28_text_document
     - 0.9776
-    - OpenSeek/100B_dataset/zh_cc-high-loss1/part_59_text_document
+    - ${experiment.dataset_base_dir}/zh_cc-high-loss1/part_59_text_document
     - 0.3725
-    - OpenSeek/100B_dataset/zh_cc-high-loss2/part_16_text_document
+    - ${experiment.dataset_base_dir}/zh_cc-high-loss2/part_16_text_document
     - 0.9492
-    - OpenSeek/100B_dataset/zh_cc-medidum-loss0/part_192_text_document
+    - ${experiment.dataset_base_dir}/zh_cc-medidum-loss0/part_192_text_document
     - 0.9236
-    - OpenSeek/100B_dataset/zh_cc-medidum-loss1/part_550_text_document
+    - ${experiment.dataset_base_dir}/zh_cc-medidum-loss1/part_550_text_document
     - 1.0643
-    - OpenSeek/100B_dataset/zh_cc-medidum-loss2/part_71_text_document
+    - ${experiment.dataset_base_dir}/zh_cc-medidum-loss2/part_71_text_document
 
   split: 1
   no_mmap_bin_files: true
