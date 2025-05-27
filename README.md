@@ -49,19 +49,20 @@ Discussions of dataset implementations, training optimizations, and experimental
 
 # 🚗 Getting Started
 ## Preparation
-1. Clone this repository:
+1. Clone this repository and enter the directory:
 ```shell
 git clone https://github.com/FlagAI-Open/OpenSeek.git
+cd OpenSeek
 ```
-2. Install the [FlagScale](https://github.com/FlagOpen/FlagScale) tool (skip this step if already installed):
+2. Install the [FlagScale](https://github.com/FlagOpen/FlagScale) tool (or move it to OpenSeek if you have installed it somewhere else):
 
 - From Source:
 ```shell
 # Clone the repository
-git clone https://github.com/FlagOpen/FlagScale.git path/to/FlagScale
+git clone https://github.com/FlagOpen/FlagScale.git
 
 # Install the requirements
-cd path/to/FlagScale/install
+cd FlagScale/install
 ./install-requirements.sh --env train
 # ./install-requirements.sh --env inference
 
@@ -73,37 +74,21 @@ cd path/to/FlagScale/install
 # cp -r megatron-energon/src/megatron/energon megatron/megatron
 ```
 
-- Using Docker (Recommended):
-```shell
-
-```
+- Using Docker (coming soon)
 
 - For more details, see [FlagScale](https://github.com/FlagOpen/FlagScale) or [readme](docs/FlagScale_Usage.md).
 
-3. Download the [OpenSeek-Pretrain-100B](https://huggingface.co/datasets/BAAI/OpenSeek-Pretrain-100B) dataset from Huggingface.
+3. Download the [OpenSeek-Pretrain-100B](https://huggingface.co/datasets/BAAI/OpenSeek-Pretrain-100B) dataset to OpenSeek.
 
 ## Running the Baseline
-1. Copy the `openseek/algorithm/run_exp.sh` script to the FlagScale root directory:
+Make sure you have completed the environment installation and configuration as outlined in the [previous section](#preparation). Next, you can run the baseline with a simple command:
 ```shell
-cp path/to/OpenSeek/openseek/algorithm/run_exp.sh path/to/FlagScale
+bash openseek/baseline/run_exp.sh
 ```
 
-2. Modify the configuration path in `run_exp.sh`. Change line 30 to
-```shell
-python3 run.py --config-path path/to/OpenSeek/configs/OpenSeek-Small-v1-Baseline --config-name $2
-```
+## Where is the Log?
 
-3. Navigate to the FlagScale root directory and run the baseline:
-```shell
-cd path/to/FlagScale
-bash run_exp.sh start config_deepseek_v3_1_4b.yaml
-```
-
-4. For detailed explanations of the experiment configuration, see [Experiment Configuration](#experiment-configuration).
-
-## Experiment Logs
-
-Experiment logs will be output to the Aquila-1_4B-A0_4B-Baseline/logs directory. For example, when training with two machines, each having eight GPUs:
+Experiment logs will be output to the `Aquila-1_4B-A0_4B-Baseline/logs` directory. For example, when training with two machines, each having eight GPUs:
 
 - The experiment startup log is located in the path corresponding to the first GPU on the first host. For example:
 
@@ -146,10 +131,14 @@ Your can find more details about data [here](docs/Data.md).
 |--|--|--|--|
 |Parameter size| 1.4B (0.4B active) | 1.4B (0.4B active) | 16B (3B active) |
 |Number of tokens|100B|720B|200B|
-|Checkpoint|https://huggingface.co/BAAI/OpenSeek-Small-v1-Baseline|https://huggingface.co/BAAI/OpenSeek-Small-v1|https://huggingface.co/BAAI/OpenSeek-Mid-v1|
-|Experiment Config|[config_deepseek_v3_1_4b.yaml](configs/OpenSeek-Small-v1-Baseline/config_deepseek_v3_1_4b.yaml) |[config_deepseek_v3_3b_1330B.yaml](configs/OpenSeek-Small-v1/config_deepseek_v3_3b_1330B.yaml) |[config_deepseek_v3_16b.yaml](configs/OpenSeek-Mid-v1/config_deepseek_v3_16b.yaml) |
-|Training config|[train_deepseek_v3_3b_1330B.yaml](configs/OpenSeek-Small-v1/train_deepseek_v3_3b_1330B.yaml)|[train_deepseek_v3_3b_1330B.yaml](configs/OpenSeek-Small-v1/train_deepseek_v3_3b_1330B.yaml)|[train_deepseek_v3_16b.yaml](configs/OpenSeek-Mid-v1/train_deepseek_v3_16b.yaml)|
+|Checkpoint|[huggingface](https://huggingface.co/BAAI/OpenSeek-Small-v1-Baseline)|[huggingface](https://huggingface.co/BAAI/OpenSeek-Small-v1)|[huggingface](https://huggingface.co/BAAI/OpenSeek-Mid-v1)|
+|Wandb|[wandb](https://wandb.ai/aquila3/OpenSeek-3B-v0.1/runs/Aquila-1_4B-A0_4B-Baseline-rank-31)|[wandb](https://wandb.ai/aquila3/Aquila-1_4B-A0_4B-1330B)|[wandb](https://wandb.ai/aquila3/OpenSeek-3B-v0.1/runs/DeepSeek-V3-16B3A-K81-dist02-rank-2047)|
+|Evaluation|[evaluation](https://huggingface.co/BAAI/OpenSeek-Small-v1-Baseline#evalation)|[evaluation](https://huggingface.co/BAAI/OpenSeek-Small-v1#benchmark-performance)|[evaluation](https://huggingface.co/BAAI/OpenSeek-Mid-v1/blob/main/README.md#evalation)|
+|Experiment Config|[Experiment Config](configs/OpenSeek-Small-v1-Baseline/config_deepseek_v3_1_4b.yaml)|[Experiment Config](configs/OpenSeek-Small-v1/config_deepseek_v3_3b_1330B.yaml)|[Experiment Config](configs/OpenSeek-Mid-v1/config_deepseek_v3_16b.yaml) |
+|Training config| [Training Config](configs/OpenSeek-Small-v1-Baseline/train/train_deepseek_v3_1_4b.yaml)|[Training Config](configs/OpenSeek-Small-v1/train/train_deepseek_v3_3b_1330B.yaml)|[Training Config](configs/OpenSeek-Mid-v1/train/train_deepseek_v3_16b.yaml)|
 |Notes|This model is open-sourced as a baseline for future experiments in areas such as dataset construction, algorithmic strategies, and parallel training frameworks.|OpenSeek-Small v1 is the first-stage production model from the OpenSeek project, designed as a foundation for next-generation language models. |We conducted experiments on training hyperparameters, the Multiple Token Predictor submodule, and data mixing ratios. The resulting weights are released as a temporary and experimental checkpoint.|
+
+> The usage and difference of Experiment Config and Training Config are explained [here](#experiment-configuration).
 
 # 🖥️ System
 TODO
@@ -174,7 +163,7 @@ Modify the `run_exp.sh` script to specify the directory of your configuration an
 
 For more information, see [Advanced Configuration Guide Link](configs/README.md).
 
-## Data Mixing Experiment
+## How to Start a Data Mixing Experiment
 
 The process for conducting a data mixing experiment is as follows:
 
@@ -187,8 +176,8 @@ The process for conducting a data mixing experiment is as follows:
 4. Check Training Results: Refer to the [Experiment Logs](#experiment-logs) section.
 
 For more details, see [here](openseek/data/data_mix_exp/README.md).
-## Training Experiment
 
+## How to Train on Multiple Machines
 TODO
 
 # 👁 Project Highlights
