@@ -55,7 +55,7 @@ For detailed information on how to contribute, please refer to our [Contribution
 # 🚗 Getting Started
 
 ## What is Baseline
-The openseek-baseline is used as the baseline for PAZHOU algorithm competition and also used to evaluate the PRs in openseek. Openseek-baseline is a standarlized LLM training and evaluating pipline, it consist of a 100B dataset[], a training code[], wandb[], ckpt[] and evaluation results[]. (帮忙改成表格)
+The openseek-baseline is used as the baseline for PAZHOU algorithm competition and also used to evaluate the PRs in openseek. Openseek-baseline is a standarlized LLM training and evaluating pipline, it consist of a [100B dataset](#Preparing-the-data), a [training code](#Running-the-Baseline), [wandb](https://wandb.ai/aquila3/OpenSeek-3B-v0.1/runs/Aquila-1_4B-A0_4B-Baseline-rank-31), [checkpoint](https://huggingface.co/BAAI/OpenSeek-Small-v1-Baseline) and [evaluation results](https://huggingface.co/BAAI/OpenSeek-Small-v1-Baseline#evalation). 
 
 ## Preparing Enviroment
 1. Clone this repository and enter the directory:
@@ -93,12 +93,9 @@ Make sure you have completed the environment installation and configuration as o
 ```shell
 bash openseek/baseline/run_exp.sh start
 ```
-## Compare the results
-The results should be like, wandb xxxx, results xxxx.
-
 
 # 📚 Data Group
-Target:xxxx
+Target: We construct a large-scale multilingual pretraining dataset exceeding 10 trillion tokens, covering a diverse range of languages and domains. To further improve data quality and training efficiency, we incorporate data synthesis techniques, such as chain-of-thought generation and instruction tuning. 
 
 
 ## CCI4.0-M2 v1
@@ -117,7 +114,7 @@ Your can find more details about data [here](docs/README_CCI4.0_M2_V1.md).
 
 
 # 🚀 Algorithm Group
-Target: xxxx
+Target: Our study focuses on three key aspects of large-scale language model training: data mixing, hyperparameter tuning, and reinforcement learning (RL). We systematically explore data composition strategies to balance quality and diversity across domains, investigate the impact of hyperparameter configurations on training stability and convergence, and incorporate RL-based optimization to further align model behavior with task-specific objectives. 
 
 
 | | OpenSeek-Small-v1-Baseline | OpenSeek-Small-v1 |
@@ -134,16 +131,18 @@ Target: xxxx
 > The usage and difference of Experiment Config and Training Config are explained [here](#experiment-configuration).
 
 # 🖥️ System Group
-Target：
+Target：With support from the open-source community, flagscale aims to reproduce DeepSeek V3 & R1’s distributed training system, ensuring stable and performant end-to-end training.
+
 ## Stage1 results
-图
+[](./figs/openseek_system_progress.png)
+
 # Experiments & Advanced usage
 ## How to Train on Multiple Machines
 - [distributed training](docs/distributed_training.md)
 ## How to do data mixture experiment
-- [experiment1]
+- [data mixture experiment](docs/data_mixture_exp.md)
 ## How to do algorithm experiment
-- [experiment2]
+- [algorithm experiment](docs/algorithm_exp.md)
 ## 
 
 # 📜 License Agreement
