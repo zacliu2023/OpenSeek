@@ -178,7 +178,7 @@ For more details, see [here](openseek/data/data_mix_exp/README.md).
 ## How to Train on Multiple Machines
 TODO
 
-
+# Contact Us
 If you have any questions, feel free to scan our QR code.
 <div align="center">
   <img src="./wechat.png" alt="wechat" width="200">
