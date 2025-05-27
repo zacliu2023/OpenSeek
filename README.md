@@ -98,7 +98,7 @@ bash openseek/baseline/run_exp.sh start
 Target: We construct a large-scale multilingual pretraining dataset exceeding 10 trillion tokens, covering a diverse range of languages and domains. To further improve data quality and training efficiency, we incorporate data synthesis techniques, such as chain-of-thought generation and instruction tuning. 
 
 
-## CCI4.0-M2 v1
+## Stage1 results
 
 [CCI4.0-M2 V1](docs/README_CCI4.0_M2_V1.md) is a large-scale bilingual pre-training dataset engineered for superior data quality and diverse human-like reasoning trajector:
 
@@ -116,7 +116,7 @@ Your can find more details about data [here](docs/README_CCI4.0_M2_V1.md).
 # 🚀 Algorithm Group
 Target: Our study focuses on three key aspects of large-scale language model training: data mixing, hyperparameter tuning, and reinforcement learning (RL). We systematically explore data composition strategies to balance quality and diversity across domains, investigate the impact of hyperparameter configurations on training stability and convergence, and incorporate RL-based optimization to further align model behavior with task-specific objectives. 
 
-
+## Stage1 results
 | | OpenSeek-Small-v1-Baseline | OpenSeek-Small-v1 |
 |--|--|--|
 |Parameter size| 1.4B (0.4B active) | 1.4B (0.4B active) |
@@ -134,7 +134,9 @@ Target: Our study focuses on three key aspects of large-scale language model tra
 Target：With support from the open-source community, flagscale aims to reproduce DeepSeek V3 & R1’s distributed training system, ensuring stable and performant end-to-end training.
 
 ## Stage1 results
-[](./figs/openseek_system_progress.png)
+<div align="center">
+  <img src="./figs/openseek_system_progress.png" alt="wechat" width="800">
+</div>
 
 # Experiments & Advanced usage
 ## How to Train on Multiple Machines
