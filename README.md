@@ -37,6 +37,13 @@ Please report framework-specific issues to [FlagScale's GitHub Issues](https://g
 - *For data & algorithm improvements*
 Discussions of dataset implementations, training optimizations, and experimental configurations in [here](https://github.com/FlagAI-Open/OpenSeek/issues).
 
+For detailed information on how to contribute, please refer to our [Contribution Guide](CONTRIBUTING.md).
+
+
+<div align="center">
+  <img src="./wechat.png" alt="wechat" width="200">
+</div>
+
 
 
 # 📢 News
@@ -48,7 +55,11 @@ Discussions of dataset implementations, training optimizations, and experimental
 - 🔥[02/13/2025] Completed experiments on OpenSeek-PT-1T dataset, [more]().
 
 # 🚗 Getting Started
-## Preparation
+
+## What is Baseline
+The openseek-baseline is used as the baseline for PAZHOU algorithm competition and also used to evaluate the PRs in openseek. Openseek-baseline is a standarlized LLM training and evaluating pipline, it consist of a 100B dataset[], a training code[], wandb[], ckpt[] and evaluation results[]. (帮忙改成表格)
+
+## Preparing Enviroment
 1. Clone this repository and enter the directory:
 ```shell
 git clone https://github.com/FlagAI-Open/OpenSeek.git
@@ -78,33 +89,25 @@ cd FlagScale/install
 
 - For more details, see [FlagScale](https://github.com/FlagOpen/FlagScale) or [readme](docs/FlagScale_Usage.md).
 
-3. Download the [OpenSeek-Pretrain-100B](https://huggingface.co/datasets/BAAI/OpenSeek-Pretrain-100B) dataset to OpenSeek.
+## Preparing the data
+Download the [OpenSeek-Pretrain-100B](https://huggingface.co/datasets/BAAI/OpenSeek-Pretrain-100B) dataset to OpenSeek.
 
 ## Running the Baseline
 Make sure you have completed the environment installation and configuration as outlined in the [previous section](#preparation). Next, you can run the baseline with a simple command:
 ```shell
 bash openseek/baseline/run_exp.sh
 ```
+## Compare the results
+The results should be like, wandb xxxx, results xxxx.
 
-## Where is the Log?
 
-Experiment logs will be output to the `Aquila-1_4B-A0_4B-Baseline/logs` directory. For example, when training with two machines, each having eight GPUs:
+# Working Groups
 
-- The experiment startup log is located in the path corresponding to the first GPU on the first host. For example:
+## 📚 Data Group
+Target:xxxx
 
-```
-Aquila-1_4B-A0_4B-Baseline/logs/details/host_0_xxx.xxx.xxx.xxx/20250423_185352.022338/default_atongk86/attempt_0/0
-```
 
-- The training loss log is located in the path corresponding to the last GPU on the last host. For example:
-
-```
-Aquila-1_4B-A0_4B-Baseline/logs/details/host_1_yyy.yyy.yyy.yyy/20250423_185352.918040/default_zcuhq1c7/attempt_0/7
-```
-
-# 📚 Data
-
-## CCI4.0-M2 v1
+### CCI4.0-M2 v1
 
 [CCI4.0-M2 V1](docs/README_CCI4.0_M2_V1.md) is a large-scale bilingual pre-training dataset engineered for superior data quality and diverse human-like reasoning trajector:
 
@@ -122,12 +125,14 @@ In addition to the main suite, [OpenSeek-Pretrain-100B](docs/100B_pipeline.md) w
 Your can find more details about data [here](docs/Data.md).
 
 
-# 🚀 Algorithm
+# 🚀 Algorithm Group
+Target: xxxx
 
-## Stage 1
 
+## Experiments in Stage1
 
-| | OpenSeek-Small-v1-Baseline | OpenSeek-Small-v1 | OpenSeek-Mid-v1 |
+## Models in Stage1
+| | OpenSeek-Baseline v1 | OpenSeek-Small-v1 | OpenSeek-Mid-v1 |
 |--|--|--|--|
 |Parameter size| 1.4B (0.4B active) | 1.4B (0.4B active) | 16B (3B active) |
 |Number of tokens|100B|720B|200B|
@@ -140,70 +145,12 @@ Your can find more details about data [here](docs/Data.md).
 
 > The usage and difference of Experiment Config and Training Config are explained [here](#experiment-configuration).
 
-# 🖥️ System
-TODO
-
-# 🔋 Advanced Usage
-
-## Experiment Configuration
-
-The baseline configuration is located in the `configs/OpenSeek-Small-v1-Baseline` directory, which includes:
-
-- `config_deepseek_v3_1_4b.yaml`: This is the experiment configuration file, defining the experiment directory, backend engine, task type, and environment settings.
-
-- `train/train_deepseek_v3_1_4b.yaml`: This is the job configuration (job config) file, specifying model parameters, dataset configurations, and training-specific settings.
-
-To customize the experiment configuration, you can modify the baseline configuration directly (or copy it and modify):
-
-- Modify the `experiment.exp_name` field in the experiment configuration file. The experiment output path will be under a directory with this new name.
-
-- Modify the `data.data_path` field in the job configuration file to use your data path and the corresponding data mixing ratios.
-
-Modify the `run_exp.sh` script to specify the directory of your configuration and the path to your experiment configuration file.
-
-For more information, see [Advanced Configuration Guide Link](configs/README.md).
-
-## How to Start a Data Mixing Experiment
-
-The process for conducting a data mixing experiment is as follows:
-
-1. Environment and Tool Installation: Follow the steps in the [Preparation](#preparation) section.
-
-2. Modify Experiment Configuration: Refer to the [Experiment Configuration](#experiment-configuration) section.
-
-3. Start the Experiment: Use the [Running the Baseline](#running-the-baseline) section as a guide for launching your modified script.
-
-4. Check Training Results: Refer to the [Experiment Logs](#experiment-logs) section.
-
-For more details, see [here](openseek/data/data_mix_exp/README.md).
-
+# 🖥️ System Group
+Target：
+## Stage1 results
+图
 ## How to Train on Multiple Machines
 TODO
-
-# 👁 Project Highlights
-- *High-Quality Data Accessibility:*
-Open-source 10TB-level, high-quality Chinese and English pretraining data, ensuring robust and diverse model training resources.
-- *Scalable Data Synthesis Strategy:*
-A streamlined and scalable approach to synthesizing Chain-of-Thought (CoT) data, leveraging Webpage, Code, Math, Wiki, and Book sources to enhance reasoning capabilities.
-- *Multi-AI Chip Support:*
-  Built on Triton, the project offers optimized support for multiple AI chips, ensuring flexibility and adaptability across diverse hardware ecosystems.
-- *High-Performance Training Infrastructure:*
-  Highly optimized training support, designed to maximize efficiency and accelerate model development.
-- *Advanced Model Architecture:*
-  A more efficient model structure, optimized for performance and scalability, enabling superior computational efficiency and inference speed.
-
-
-# ☎️ Open-Source Co-construction Plan
-OpenSeek thrives on community collaboration. We believe in the collective intelligence of developers worldwide and welcome contributions that advance this project toward excellence.
-
-For detailed information on how to contribute, please refer to our [Contribution Guide](CONTRIBUTING.md).
-
-Together, we can explore the frontiers of large language models and drive technological innovation through open source collaboration.
-
-<div align="center">
-  <img src="./wechat.png" alt="wechat" width="200">
-</div>
-
 # 📜 License Agreement
 - Apache 2.0
 
