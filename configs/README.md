@@ -14,10 +14,6 @@ Example: **configs/OpenSeek-Small-v1-Baseline/train_deepseek_v3_1_4b.yaml**
 
 The subdirectories:
 
-- `OpenSeek-v1`: Configuration for the OpenSeek-v1 model (16B parameters).
-  - `config_deepseek_v3_16b.yaml`
-  - `train_deepseek_v3_16b.yaml`
-
 - `OpenSeek-Small-v1`: Configuration for the OpenSeek-Small-v1 model (3B parameters).
   - `config_deepseek_v3_3b_1330B.yaml`
   - `train_deepseek_v3_3b_1330B.yaml`
