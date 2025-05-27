@@ -109,7 +109,7 @@ Aquila-1_4B-A0_4B-Baseline/logs/details/host_1_yyy.yyy.yyy.yyy/20250423_185352.9
 || CCI4.0-M2-Base v1 | CCI4.0-M2-CoT v1 |
 |--|--|--|
 |Download| [huggingface](https://huggingface.co/datasets/BAAI/CCI4.0-M2-Base-v1) | [huggingface](https://huggingface.co/datasets/BAAI/CCI4.0-M2-CoT-v1) |
-|Notes| 5.2TB Chinese webpage, 22TB English webpage, some data released in [CCI4.0-M2-Extra](https://huggingface.co/datasets/BAAI/CCI4.0-M2-Extra-v1) due to the license concern. | 45 million CoT sample covers math, code, arxiv, wiki and webpage|
+|Notes| 5.2TB Chinese webpage, 22TB English webpage, some data released in [CCI4.0-M2-Extra](https://huggingface.co/datasets/BAAI/CCI4.0-M2-Extra-v1) due to the license concern. | 430 million CoT sample covers math, code, arxiv, wiki and webpage|
 
 
 
