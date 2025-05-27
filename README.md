@@ -76,8 +76,10 @@ cd FlagScale/install
 ```
 
 - Using Docker (Recommend)
+```shell
 # Pull images
 docker pull openseek2025/openseek:flagscale-20250527
+```
 
 - For more details, see [FlagScale](https://github.com/FlagOpen/FlagScale) or [readme](docs/FlagScale_Usage.md).
 
