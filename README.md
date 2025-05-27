@@ -125,16 +125,16 @@ Your can find more details about data [here](docs/Data.md).
 ## Stage 1
 
 
-| | OpenSeek-Small-v1-Baseline | OpenSeek-Small-v1 | OpenSeek-Mid-v1 |
-|--|--|--|--|
-|Parameter size| 1.4B (0.4B active) | 1.4B (0.4B active) | 16B (3B active) |
-|Number of tokens|100B|720B|200B|
-|Checkpoint|[huggingface](https://huggingface.co/BAAI/OpenSeek-Small-v1-Baseline)|[huggingface](https://huggingface.co/BAAI/OpenSeek-Small-v1)|[huggingface](https://huggingface.co/BAAI/OpenSeek-Mid-v1)|
-|Wandb|[wandb](https://wandb.ai/aquila3/OpenSeek-3B-v0.1/runs/Aquila-1_4B-A0_4B-Baseline-rank-31)|[wandb](https://wandb.ai/aquila3/Aquila-1_4B-A0_4B-1330B)|[wandb](https://wandb.ai/aquila3/OpenSeek-3B-v0.1/runs/DeepSeek-V3-16B3A-K81-dist02-rank-2047)|
-|Evaluation|[evaluation](https://huggingface.co/BAAI/OpenSeek-Small-v1-Baseline#evalation)|[evaluation](https://huggingface.co/BAAI/OpenSeek-Small-v1#benchmark-performance)|[evaluation](https://huggingface.co/BAAI/OpenSeek-Mid-v1/blob/main/README.md#evalation)|
-|Experiment Config|[Experiment Config](configs/OpenSeek-Small-v1-Baseline/config_deepseek_v3_1_4b.yaml)|[Experiment Config](configs/OpenSeek-Small-v1/config_deepseek_v3_3b_1330B.yaml)|[Experiment Config](configs/OpenSeek-Mid-v1/config_deepseek_v3_16b.yaml) |
-|Training config| [Training Config](configs/OpenSeek-Small-v1-Baseline/train/train_deepseek_v3_1_4b.yaml)|[Training Config](configs/OpenSeek-Small-v1/train/train_deepseek_v3_3b_1330B.yaml)|[Training Config](configs/OpenSeek-Mid-v1/train/train_deepseek_v3_16b.yaml)|
-|Notes|This model is open-sourced as a baseline for future experiments in areas such as dataset construction, algorithmic strategies, and parallel training frameworks.|OpenSeek-Small v1 is the first-stage production model from the OpenSeek project, designed as a foundation for next-generation language models. |We conducted experiments on training hyperparameters, the Multiple Token Predictor submodule, and data mixing ratios. The resulting weights are released as a temporary and experimental checkpoint.|
+| | OpenSeek-Small-v1-Baseline | OpenSeek-Small-v1 |
+|--|--|--|
+|Parameter size| 1.4B (0.4B active) | 1.4B (0.4B active) |
+|Number of tokens|100B|720B|
+|Checkpoint|[huggingface](https://huggingface.co/BAAI/OpenSeek-Small-v1-Baseline)|[huggingface](https://huggingface.co/BAAI/OpenSeek-Small-v1)|
+|Wandb|[wandb](https://wandb.ai/aquila3/OpenSeek-3B-v0.1/runs/Aquila-1_4B-A0_4B-Baseline-rank-31)|[wandb](https://wandb.ai/aquila3/Aquila-1_4B-A0_4B-1330B)|
+|Evaluation|[evaluation](https://huggingface.co/BAAI/OpenSeek-Small-v1-Baseline#evalation)|[evaluation](https://huggingface.co/BAAI/OpenSeek-Small-v1#benchmark-performance)|
+|Experiment Config|[Experiment Config](configs/OpenSeek-Small-v1-Baseline/config_deepseek_v3_1_4b.yaml)|[Experiment Config](configs/OpenSeek-Small-v1/config_deepseek_v3_3b_1330B.yaml) |
+|Training config| [Training Config](configs/OpenSeek-Small-v1-Baseline/train/train_deepseek_v3_1_4b.yaml)|[Training Config](configs/OpenSeek-Small-v1/train/train_deepseek_v3_3b_1330B.yaml)|
+|Notes|This model is open-sourced as a baseline for future experiments in areas such as dataset construction, algorithmic strategies, and parallel training frameworks.|OpenSeek-Small v1 is the first-stage production model from the OpenSeek project, designed as a foundation for next-generation language models. |
 
 > The usage and difference of Experiment Config and Training Config are explained [here](#experiment-configuration).
 
