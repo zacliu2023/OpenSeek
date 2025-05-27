@@ -79,6 +79,9 @@ cd FlagScale/install
 ```shell
 # Pull images
 docker pull openseek2025/openseek:flagscale-20250527
+
+# Clone the repository
+git clone https://github.com/FlagOpen/FlagScale.git
 ```
 
 - For more details, see [FlagScale](https://github.com/FlagOpen/FlagScale) or [readme](docs/FlagScale_Usage.md).
