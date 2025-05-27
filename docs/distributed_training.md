@@ -20,6 +20,8 @@ For more information, see [Advanced Configuration Guide Link](configs/README.md)
 
 ## How to Start a Data Mixing Experiment
 
+## How to Start a Data Mixing Experiment
+
 The process for conducting a data mixing experiment is as follows:
 
 1. Environment and Tool Installation: Follow the steps in the [Preparation](#preparation) section.
@@ -31,3 +33,6 @@ The process for conducting a data mixing experiment is as follows:
 4. Check Training Results: Refer to the [Experiment Logs](#experiment-logs) section.
 
 For more details, see [here](openseek/data/data_mix_exp/README.md).
+
+## How to Start a HyperParam Tuning Experiment
+

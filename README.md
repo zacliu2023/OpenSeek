@@ -108,12 +108,12 @@ Target:xxxx
 || CCI4.0-M2-Base v1 | CCI4.0-M2-CoT v1 |
 |--|--|--|
 |Download| [huggingface](https://huggingface.co/datasets/BAAI/CCI4.0-M2-Base-v1) | [huggingface](https://huggingface.co/datasets/BAAI/CCI4.0-M2-CoT-v1) |
-|Notes| 5.2TB Chinese webpage, 22TB English webpage, some data released in [CCI4.0-M2-Extra](https://huggingface.co/datasets/BAAI/CCI4.0-M2-Extra-v1) due to the license concern. | 45 million CoT sample covers math, code, arxiv, wiki and webpage|
+|Notes| 5.2TB Chinese webpage, 22TB English webpage, some data released in [CCI4.0-M2-Extra](https://huggingface.co/datasets/BAAI/CCI4.0-M2-Extra-v1) due to the license concern. | 430 million CoT sample covers math, code, arxiv, wiki and webpage|
 
 
 In addition to the main suite, [OpenSeek-Pretrain-100B](docs/100B_pipeline.md) was randomly sampled from the CCI4.0-M2 v1 datasets. This 100B data subset is specifically used for experimental training purposes.
 
-Your can find more details about data [here](docs/Data.md).
+Your can find more details about data [here](docs/README_CCI4.0_M2_V1.md).
 
 
 # 🚀 Algorithm Group
@@ -143,8 +143,9 @@ Target：
 ## How to do data mixture experiment
 - [experiment1]
 ## How to do algorithm experiment
-- [experiment2
+- [experiment2]
 ## 
+
 # 📜 License Agreement
 - Apache 2.0
 
