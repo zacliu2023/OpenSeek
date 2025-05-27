@@ -117,7 +117,7 @@ Aquila-1_4B-A0_4B-Baseline/logs/details/host_1_yyy.yyy.yyy.yyy/20250423_185352.9
 
 In addition to the main suite, [OpenSeek-Pretrain-100B](docs/100B_pipeline.md) was randomly sampled from the CCI4.0-M2 v1 datasets. This 100B data subset is specifically used for experimental training purposes.
 
-Your can find more details about data [here](docs/Data.md).
+Your can find more details about data [here](docs/README_CCI4.0_M2_V1.md).
 
 
 # 🚀 Algorithm
