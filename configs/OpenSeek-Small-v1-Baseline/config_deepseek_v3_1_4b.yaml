@@ -5,7 +5,7 @@ defaults:
 
 experiment:
   exp_name: Aquila-1_4B-A0_4B-Baseline
-  dataset_base_dir: your/dataset/path
+  dataset_base_dir: ../OpenSeek-Pretrain-100B
   seed: 42
   save_steps: 600
   load: null
