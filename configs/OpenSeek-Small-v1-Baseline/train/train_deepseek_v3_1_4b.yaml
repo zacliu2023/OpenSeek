@@ -44,7 +44,7 @@ model:
   num_layers: 6
   hidden_size: 1280
   num_attention_heads: 10
-  group_query_attention: true
+  group_query_attention: false
   num_query_groups: 10 # num_key_value_heads
   seq_length: 4096
   max_position_embeddings: 4096
@@ -289,6 +289,6 @@ data:
   no_mmap_bin_files: true
   tokenizer:
     tokenizer_type: QwenTokenizerFS
-    tokenizer_path: examples/aquila/qwentokenizer
+    tokenizer_path: ../hf_openseek/tokenizer
     vocab_size: 151851
     make_vocab_size_divisible_by: 64
