@@ -39,11 +39,5 @@ fi
 # Step 5: Return to original directory and print completion message
 cd "$ORIGINAL_DIR"
 echo "Setup complete!"
-echo "==================================== Important =========================================="
-echo "1. Please update the 'experiment.dataset_base_dir' in configs/OpenSeek-Small-v1-Baseline/config_deepseek_v3_1_4b.yaml with your dataset path."
-
-echo "2. Please update the 'data.tokenizer.tokenizer_path' in configs/OpenSeek-Small-v1-Baseline/train/train_deepseek_v3_1_4b.yaml with your tokenizer path, or you can use our default tokenizer path from $ORIGINAL_DIR/hf_openseek/tokenizer"
-
-echo "3. Then you can run the script from the OpenSeek root directory with the command:
+echo "Then you can run the script from the OpenSeek root directory with the command:
       bash openseek/baseline/run_exp.sh start"
-echo "==================================== Important =========================================="

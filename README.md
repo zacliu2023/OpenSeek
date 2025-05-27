@@ -80,10 +80,16 @@ cd FlagScale/install
 
 3. Download the [OpenSeek-Pretrain-100B](https://huggingface.co/datasets/BAAI/OpenSeek-Pretrain-100B) dataset to OpenSeek.
 
+**You can also run the following script to build up your project environment after you have built python environment and activated it:**
+
+```
+bash openseek/baseline/setup.sh
+```
+
 ## Running the Baseline
 Make sure you have completed the environment installation and configuration as outlined in the [previous section](#preparation). Next, you can run the baseline with a simple command:
 ```shell
-bash openseek/baseline/run_exp.sh
+bash openseek/baseline/run_exp.sh start
 ```
 
 ## Where is the Log?
