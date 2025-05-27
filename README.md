@@ -178,26 +178,8 @@ For more details, see [here](openseek/data/data_mix_exp/README.md).
 ## How to Train on Multiple Machines
 TODO
 
-# 👁 Project Highlights
-- *High-Quality Data Accessibility:*
-Open-source 10TB-level, high-quality Chinese and English pretraining data, ensuring robust and diverse model training resources.
-- *Scalable Data Synthesis Strategy:*
-A streamlined and scalable approach to synthesizing Chain-of-Thought (CoT) data, leveraging Webpage, Code, Math, Wiki, and Book sources to enhance reasoning capabilities.
-- *Multi-AI Chip Support:*
-  Built on Triton, the project offers optimized support for multiple AI chips, ensuring flexibility and adaptability across diverse hardware ecosystems.
-- *High-Performance Training Infrastructure:*
-  Highly optimized training support, designed to maximize efficiency and accelerate model development.
-- *Advanced Model Architecture:*
-  A more efficient model structure, optimized for performance and scalability, enabling superior computational efficiency and inference speed.
 
-
-# ☎️ Open-Source Co-construction Plan
-OpenSeek thrives on community collaboration. We believe in the collective intelligence of developers worldwide and welcome contributions that advance this project toward excellence.
-
-For detailed information on how to contribute, please refer to our [Contribution Guide](CONTRIBUTING.md).
-
-Together, we can explore the frontiers of large language models and drive technological innovation through open source collaboration.
-
+If you have any questions, feel free to scan our QR code.
 <div align="center">
   <img src="./wechat.png" alt="wechat" width="200">
 </div>
