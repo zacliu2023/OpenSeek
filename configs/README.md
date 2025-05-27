@@ -2,8 +2,15 @@
 
 This directory contains configuration files for different models and training setups.
 
-- `config_*.yaml`: This file contains the model configuration details.
-- `train_*.yaml`: This file contains the training setup and parameters.
+## Experiment-Level YAML
+This YAML defines the experiment directory, backend engine, task type, and environment configuration. Generally, these files require minimal modification.
+
+Example: **configs/OpenSeek-Small-v1-Baseline/config_deepseek_v3_1_4b.yaml**
+
+## Task-Level YAML
+This YAML specifies model parameters, dataset configurations, and training-specific settings. Within data.data_path, you can configure the data ratio, and in model, you can set up the model configuration.
+
+Example: **configs/OpenSeek-Small-v1-Baseline/train_deepseek_v3_1_4b.yaml**
 
 The subdirectories:
 
@@ -19,3 +26,4 @@ The subdirectories:
   - `config_deepseek_v3_1_4b.yaml`
   - `train_deepseek_v3_1_4b.yaml`
 
+> Note: You should modify the `config_*.yaml` files to set the `dataset_base_dir`, `nnodes`, `nproc_per_node`, and `hostfile` for your training environment. The `train_*.yaml` files should be modified to set the `tokenizer_path`.
