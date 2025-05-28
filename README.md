@@ -101,6 +101,7 @@ Make sure you have completed the environment installation and configuration as o
 OpenSeek Project
 ├── OpenSeek-Small-v1-Baseline (This is the log dir which will appear after the program runs.)
 ├── OpenSeek-Pretrain-100B (This is the Dataset dir which contains the 100B dataset from huggingface.)
+├── FlagScale (This is the FlagScale package download from github.)
 ├── CONTRIBUTING.md
 ├── LICENSE
 ├── README.md
