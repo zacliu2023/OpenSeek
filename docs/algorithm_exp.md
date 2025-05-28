@@ -57,18 +57,21 @@ For each hyper-parameter variant, create a new experiment configuration or syste
 
 ## MTP Experimemt
 
-Multiple Token Prediction (MTP) experiments focus on evaluating or enhancing the model's capability to predict sequences of tokens effectively. The configuration of certain system parameters, particularly those related to advanced model architectures like Mixture of Experts (MoE), can significantly influence MTP performance.
+Multiple Token Prediction (MTP) experiments focus on evaluating or enhancing the model's capability to predict sequences of tokens effectively. This often involves adding specific prediction heads or modifying the loss function to account for multiple future tokens.
 
 ```yaml
 # ...
 system:
-  ## override configs for MTP experiment
-  init_method_std: 6e-3     # Adjust: Proper initialization can be crucial for stable MTP.
-  moe_router_dtype: fp32    # Adjust: Router precision might affect how experts are selected for generating token sequences.
-  moe_aux_loss_coeff: 0.0001 # Adjust: The auxiliary loss helps in balancing expert load,
-                            # which can be important for consistent multi-token predictions.
-  # ... other system parameters relevant to MTP or your model architecture
+# using MTP
+  num_mtp_predictor: 1  # Adjust: Number of future tokens the MTP head is designed to predict.
+                      # Experiment with different values (e.g., 1, 2, 3) depending on the task.
+  mtp_loss_coeff: 0.3   # Adjust: Coefficient for the MTP loss.
+                      # This balances the MTP objective with the primary language modeling loss.
+                      # Try values like 0.1, 0.3, 0.5, etc.
+
+# ... other model or system parameters
 # ...
+
 ```
 
 ## Results and Log
