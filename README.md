@@ -95,28 +95,14 @@ bash openseek/baseline/setup.sh
 ```
 
 ## Running the Baseline
-Make sure you have completed the environment installation and configuration as outlined in the [previous section](#preparation) and your folder should be like this:
+Make sure you have completed the environment installation and configuration as outlined in the [previous section](#preparation) and your **OpenSeek** folder should be like this:
 
 ```
-OpenSeek Project
-├── OpenSeek-Small-v1-Baseline (This is the log dir which will appear after the program runs.)
-├── OpenSeek-Pretrain-100B (This is the Dataset dir which contains the 100B dataset from huggingface.)
-├── FlagScale (This is the FlagScale package download from github.)
-├── CONTRIBUTING.md
-├── LICENSE
-├── README.md
-├── README_zh.md
-├── configs
-├── contribution.jpeg
-├── docker
-├── docs
-├── evaluation
-├── figs
-├── hf_openseek
-├── openseek
-├── openseek_logo.jpg
-├── tools
-└── wechat.png
+OpenSeek
+├── OpenSeek-Small-v1-Baseline (Experiment directory contains logs and model checkpoints.)
+├── OpenSeek-Pretrain-100B (Dataset directory for downloaded datasets.)
+├── FlagScale (FlagScale directory cloned from GitHub.)
+├── ...
 ```
 
 Next, you can run the baseline with a simple command:
