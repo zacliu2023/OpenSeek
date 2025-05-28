@@ -86,7 +86,7 @@ cd FlagScale/install
 - For more details, see [FlagScale](https://github.com/FlagOpen/FlagScale) or [readme](docs/FlagScale_Usage.md).
 
 ## Preparing the data
-Download the [OpenSeek-Pretrain-100B](https://huggingface.co/datasets/BAAI/OpenSeek-Pretrain-100B) dataset to local path(OpenSeek/OpenSeek-Pretrain-100B).
+Download the [OpenSeek-Pretrain-100B](https://huggingface.co/datasets/BAAI/OpenSeek-Pretrain-100B) dataset to local dir named **OpenSeek-Pretrain-100B** in OpenSeek.
 
 **You can also run the following script to build up your project environment after you have built python environment and activated it:**
 
