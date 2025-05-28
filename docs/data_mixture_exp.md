@@ -68,7 +68,7 @@ For more information, see [Megatron doc](https://github.com/NVIDIA/Megatron-LM/b
 
 ## Results and Log
 
-Experiment results will be located in a folder with the same name as the experiment (`Aquila-1_4B-A0_4B-Baseline` for the baseline example). 
+Experiment results will be located in a folder with the same name as the experiment (`OpenSeek-Small-v1-Baseline` for the baseline example). 
 
 Logs will be located in the log subdirectory within that folder. For example, when training with two machines, each having eight GPUs:
 
