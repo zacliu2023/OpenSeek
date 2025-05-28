@@ -99,9 +99,9 @@ Make sure you have completed the environment installation and configuration as o
 
 ```
 OpenSeek
-├── OpenSeek-Small-v1-Baseline (Experiment directory contains logs and model checkpoints.)
 ├── OpenSeek-Pretrain-100B (Dataset directory for downloaded datasets.)
 ├── FlagScale (FlagScale directory cloned from GitHub.)
+├── OpenSeek-Small-v1-Baseline (Experiment directory will be created automatically and contains logs and model checkpoints etc.)
 ├── ...
 ```
 
