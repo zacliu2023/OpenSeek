@@ -110,7 +110,32 @@ Next, you can run the baseline with a simple command:
 bash openseek/baseline/run_exp.sh start
 ```
 
+> ### How to Verify Your Program is Running Correctly
+>
+> After executing `bash openseek/baseline/run_exp.sh start`, you can follow these steps to confirm your program is running as expected.
+>
+> 1. navigate to the **OpenSeek root directory**. You'll notice a new folder named `OpenSeek-Small-v1-Baseline` has been created in this directory. This is the **log dir.**
+>
+> 2. You can view the program's logs and error messages by opening `OpenSeek-Small-v1-Baseline/logs/host_0_localhost.output` with a text editor like `vim`:
+>
+>    ```
+>    vi OpenSeek-Small-v1-Baseline/logs/host_0_localhost.output
+>    ```
+>
+> 3. If the program is running correctly, after approximately **1-2 minutes**, you can execute the following command from the **OpenSeek root directory**:
+>
+>    ```
+>    grep "iteration.*consumed samples" OpenSeek-Small-v1-Baseline/logs/host_0_localhost.output
+>    ```
+>
+>    If the output resembles the example below, it indicates that your program has successfully started:
+>
+>    ```
+>    [default0]: [2025-05-27 15:23:07] iteration        1/    24000 | consumed samples:          1024 | elapsed time per iteration (ms): 271607.0 | throughput per GPU (TFLOP/s/GPU): 40.4 | learning rate: 1.500000E-06 | global batch size:  1024 | lm loss: 1.192634E+01 | load_balancing_loss: 1.041994E+00 | loss scale: 1.0 | grad norm: 5.960 | num zeros: 0.0 | params norm: 238.330 | number of skipped iterations:    0 | number of nan iterations:    0 |
+>    ```
+
 # 📚 Data Group
+
 Target: We construct a large-scale multilingual pretraining dataset exceeding 10 trillion tokens, covering a diverse range of languages and domains. To further improve data quality and training efficiency, we incorporate data synthesis techniques, such as chain-of-thought generation and instruction tuning. 
 
 
