@@ -5,7 +5,7 @@ The data processing pipeline in CCI4.0 is meticulously designed to yield a high-
 - **Deduplication**. Remove redundancy and operate at both a global document level and a finer-grained string level.
 - **Multi-classifier Quality Scoring**. Evaluate data integrity and relevance across various dimensions.
 - **Fluency Filtering**. Applied independently to each domain to effectively remove samples with notably poor linguistic flow.
-- **Data Synthesis**. Leverage filtered high-quality samples as seeds with large models to generate novel data instances in diverse formats. Incorporates essential safety and privacy measures
+- **Data Synthesis**. Leverage filtered high-quality samples as seeds with large models to generate novel data instances in diverse formats. 
 - **Privacy and Toxicity Handling**. Incorporate essential safety and privacy measures.
 ---
 ### Experiments
