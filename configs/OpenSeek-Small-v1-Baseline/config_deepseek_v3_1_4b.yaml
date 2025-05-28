@@ -4,7 +4,7 @@ defaults:
   - train: train_deepseek_v3_1_4b.yaml
 
 experiment:
-  exp_name: Aquila-1_4B-A0_4B-Baseline
+  exp_name: OpenSeek-Small-v1-Baseline
   dataset_base_dir: ../OpenSeek-Pretrain-100B
   seed: 42
   save_steps: 600

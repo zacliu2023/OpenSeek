@@ -95,7 +95,32 @@ bash openseek/baseline/setup.sh
 ```
 
 ## Running the Baseline
-Make sure you have completed the environment installation and configuration as outlined in the [previous section](#preparation). Next, you can run the baseline with a simple command:
+Make sure you have completed the environment installation and configuration as outlined in the [previous section](#preparation) and your folder should be like this:
+
+```
+OpenSeek Project
+├── OpenSeek-Small-v1-Baseline (This is the log dir which will appear after the program runs.)
+├── OpenSeek-Pretrain-100B (This is the Dataset dir which contains the 100B dataset from huggingface.)
+├── CONTRIBUTING.md
+├── LICENSE
+├── README.md
+├── README_zh.md
+├── configs
+├── contribution.jpeg
+├── docker
+├── docs
+├── evaluation
+├── figs
+├── hf_openseek
+├── openseek
+├── openseek_logo.jpg
+├── tools
+├── tree-p.txt
+├── tree.txt
+└── wechat.png
+```
+
+Next, you can run the baseline with a simple command:
 ```shell
 bash openseek/baseline/run_exp.sh start
 ```
