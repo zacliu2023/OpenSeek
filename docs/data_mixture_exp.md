@@ -30,11 +30,11 @@ To customize the experiment configuration, you can modify the baseline configura
 ```sh
 # ...
 experiment:
-  exp_name: Aquila-1_4B-A0_4B-Baseline
+  exp_name: OpenSeek-Small-v1-Baseline
 # ...
 ```
 
-- Modify the `data.data_path` field in the job configuration file to use your data path and the corresponding data mixing ratios.
+- Modify the `data.data_path` field in the job configuration file to use your data path and the corresponding data mixing ratios. During the experiment, each individual ratio will be divided by the sum of all specified ratios to determine the actual proportion of data to be used from that path.
 
 ```sh
 # ...
@@ -74,12 +74,12 @@ Logs will be located in the log subdirectory within that folder. For example, wh
 
 - The experiment startup log is located in the path corresponding to the first GPU on the first host. For example:
 ```
-Aquila-1_4B-A0_4B-Baseline/logs/details/host_0_xxx.xxx.xxx.xxx/20250423_185352.022338/default_atongk86/attempt_0/0
+OpenSeek-Small-v1-Baseline/logs/details/host_0_xxx.xxx.xxx.xxx/20250423_185352.022338/default_atongk86/attempt_0/0
 ```
 
 - The training loss log is located in the path corresponding to the last GPU on the last host. For example:
 ```
-Aquila-1_4B-A0_4B-Baseline/logs/details/host_1_yyy.yyy.yyy.yyy/20250423_185352.918040/default_zcuhq1c7/attempt_0/7
+OpenSeek-Small-v1-Baseline/logs/details/host_1_yyy.yyy.yyy.yyy/20250423_185352.918040/default_zcuhq1c7/attempt_0/7
 ```
 
 
