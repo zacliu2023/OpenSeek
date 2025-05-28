@@ -4,7 +4,7 @@ defaults:
   - train: train_deepseek_v3_3b_1330B.yaml
 
 experiment:
-  exp_name: OpenSeek-Small-v1-Baseline
+  exp_name: OpenSeek-Small-v1
   dataset_base_dir: ../OpenSeek-Pretrain-100B
   seed: 42
   save_steps: 600
