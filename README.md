@@ -151,7 +151,8 @@ Target：With support from the open-source community, flagscale aims to reproduc
 - [data mixture experiment](docs/data_mixture_exp.md)
 ## How to do algorithm experiment
 - [algorithm experiment](docs/algorithm_exp.md)
-## 
+## How to do system experiment
+- [algorithm experiment](docs/system_exp.md)
 
 # 📜 License Agreement
 - Apache 2.0
