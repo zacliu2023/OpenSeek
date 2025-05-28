@@ -152,7 +152,7 @@ Target：With support from the open-source community, flagscale aims to reproduc
 ## How to do algorithm experiment
 - [algorithm experiment](docs/algorithm_exp.md)
 ## How to do system experiment
-- [algorithm experiment](docs/system_exp.md)
+- [system experiment](docs/system_exp.md)
 
 # 📜 License Agreement
 - Apache 2.0
