@@ -115,8 +115,6 @@ OpenSeek Project
 ├── openseek
 ├── openseek_logo.jpg
 ├── tools
-├── tree-p.txt
-├── tree.txt
 └── wechat.png
 ```
 
