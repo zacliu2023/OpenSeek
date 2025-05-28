@@ -204,6 +204,6 @@ data:
   no_mmap_bin_files: true
   tokenizer:
     tokenizer_type: QwenTokenizerFS
-    tokenizer_path: examples/aquila/qwentokenizer
+    tokenizer_path: ../hf_openseek/tokenizer
     vocab_size: 151851
     make_vocab_size_divisible_by: 64
