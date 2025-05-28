@@ -63,7 +63,7 @@ The openseek-baseline is used as the baseline for [PAZHOU algorithm competition]
 git clone https://github.com/FlagAI-Open/OpenSeek.git
 cd OpenSeek
 ```
-2. Install the [FlagScale](https://github.com/FlagOpen/FlagScale) tool:
+2. Install the [FlagScale](https://github.com/FlagOpen/FlagScale) dependencies:
 - Using Docker (Recommend)
 ```shell
 # Pull images
