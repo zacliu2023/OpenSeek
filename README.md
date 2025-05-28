@@ -157,7 +157,9 @@ Target：With support from the open-source community, flagscale aims to reproduc
 # Experiments & Advanced usage
 - [distributed training](docs/distributed_training.md)
 - [data mixture experiment](docs/data_mixture_exp.md)
+- [data mixture experiment results](docs/data_mixture_exp_results.md)
 - [algorithm experiment](docs/algorithm_exp.md)
+- [algorithm experiment results](docs/algorithm_exp_results.md)
 - [system experiment](docs/system_exp.md)
 
 # 📜 License Agreement
