@@ -1,11 +1,11 @@
 # Overview
-- Data mix baseline config：CCI4.0-No-Sampling
-- Data mix exp config：CCI4.0-Phi4-Sampling
+- No-Sampling：No sampling is applied to the dataset, serving as the baseline.
+- Phi4-Sampling：Following the Phi-4 paper, synthetic and rewritten sub-domain datasets are upsampled.
   
 Both configs were trained with 100B tokens for performance comparison.
 
 # Evaluation
-| Category                    | Metrics (shots)      | CCI4.0-No-Sampling (100B) | CCI4.0-Phi4-Sampling (100B) |
+| Category                    | Metrics (shots)      | No-Sampling (100B) | Phi4-Sampling (100B) |
 |----------------------------|----------------------|----------------------------|------------------------------|
 | **English-Commonsense Reasoning** | HellaSwag (5-shot)       | 0.4722                     | 0.4827                       |
 |                            | TruthfulQA (0-shot)     | 0.4114                     | 0.4016                       |
