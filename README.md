@@ -155,13 +155,9 @@ Target：With support from the open-source community, flagscale aims to reproduc
 </div>
 
 # Experiments & Advanced usage
-## How to Train on Multiple Machines
 - [distributed training](docs/distributed_training.md)
-## How to do data mixture experiment
 - [data mixture experiment](docs/data_mixture_exp.md)
-## How to do algorithm experiment
 - [algorithm experiment](docs/algorithm_exp.md)
-## How to do system experiment
 - [system experiment](docs/system_exp.md)
 
 # 📜 License Agreement
