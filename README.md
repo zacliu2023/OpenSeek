@@ -55,7 +55,7 @@ For detailed information on how to contribute, please refer to our [Contribution
 # 🚗 Getting Started
 
 ## What is Baseline
-The openseek-baseline is used as the baseline for [PAZHOU algorithm competition](https://www.aicompetition-pz.com/topic_detail/25) and also used to evaluate the PRs in openseek. Openseek-baseline is a standarlized LLM training and evaluating pipline, it consist of a [100B dataset](#Preparing-the-data), a [training code](#Running-the-Baseline), [wandb](https://wandb.ai/openseek-baai/OpenSeek-Small-v1-Baseline), [checkpoint](https://huggingface.co/BAAI/OpenSeek-Small-v1-Baseline) and [evaluation results](https://huggingface.co/BAAI/OpenSeek-Small-v1-Baseline#evalation). 
+The openseek-baseline is used as the baseline for [PAZHOU algorithm competition](https://www.aicompetition-pz.com/topic_detail/25) and also used to evaluate the PRs in openseek. Openseek-baseline is a standarlized LLM training and evaluating pipline, it consist of a [100B dataset](#Preparing-the-data), a [training code](#Running-the-Baseline), [wandb](https://wandb.ai/openseek-team/OpenSeek-Small-v1-Baseline), [checkpoint](https://huggingface.co/BAAI/OpenSeek-Small-v1-Baseline) and [evaluation results](https://huggingface.co/BAAI/OpenSeek-Small-v1-Baseline#evalation). 
 
 ## Preparing Enviroment
 1. Clone this repository and enter the directory:
@@ -163,7 +163,7 @@ Target: Our study focuses on three key aspects of large-scale language model tra
 |Parameter size| 1.4B (0.4B active) | 1.4B (0.4B active) |
 |Number of tokens|100B|720B|
 |Checkpoint|[huggingface](https://huggingface.co/BAAI/OpenSeek-Small-v1-Baseline)|[huggingface](https://huggingface.co/BAAI/OpenSeek-Small-v1)|
-|Wandb|[wandb](https://wandb.ai/openseek-baai/OpenSeek-Small-v1-Baseline)|[wandb](https://wandb.ai/openseek-baai/OpenSeek-Small-v1)|
+|Wandb|[wandb](https://wandb.ai/openseek-team/OpenSeek-Small-v1-Baseline)|[wandb](https://wandb.ai/openseek-team/OpenSeek-Small-v1)|
 |Evaluation|[evaluation](https://huggingface.co/BAAI/OpenSeek-Small-v1-Baseline#evalation)|[evaluation](https://huggingface.co/BAAI/OpenSeek-Small-v1#benchmark-performance)|
 |Experiment Config|[Experiment Config](configs/OpenSeek-Small-v1-Baseline/config_deepseek_v3_1_4b.yaml)|[Experiment Config](configs/OpenSeek-Small-v1/config_deepseek_v3_3b_1330B.yaml) |
 |Training config| [Training Config](configs/OpenSeek-Small-v1-Baseline/train/train_deepseek_v3_1_4b.yaml)|[Training Config](configs/OpenSeek-Small-v1/train/train_deepseek_v3_3b_1330B.yaml)|
