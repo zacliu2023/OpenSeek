@@ -1,6 +1,25 @@
 <div align="center">
   <img src="./openseek_logo.jpg" alt="OpenSeek Logo" width="150">
-
+  <hr>
+  <div align="center" style="line-height: 1;">
+    <a href="https://huggingface.co/spaces/BAAI/openseek"><img alt="Homepage"
+      src="https://img.shields.io/badge/Homepage-OpenSeek-7289da?logo=home&logoColor=white&color=blue"/></a>
+    <a href="https://huggingface.co/collections/BAAI/openseek-67b6f47eea718e4e5d2c255a"><img alt="Hugging Face"
+      src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-OpenSeek-ffc107?color=ffc107&logoColor=white"/></a>
+    <a href="https://discord.gg/dPKWUC7ZP5"><img alt="Discord"
+      src="https://img.shields.io/badge/Discord-OpenSeek-7289da?logo=discord&logoColor=white&color=7289da"/></a>
+    <a href="https://github.com/FlagAI-Open/OpenSeek/blob/main/wechat.png?raw=true"><img alt="Wechat"
+      src="https://img.shields.io/badge/WeChat-OpenSeek-brightgreen?logo=wechat&logoColor=white"/></a>
+    <br>
+    <a href="https://github.com/FlagAI-Open/OpenSeek/blob/main/LICENSE"><img alt="License"
+    src="https://img.shields.io/badge/License-Apache%202.0-f5de53?&color=f5de53"/></a>
+    <a href="https://github.com/FlagAI-Open/OpenSeek/stargazers"><img alt="GitHub stars"
+    src="https://img.shields.io/github/stars/FlagAI-Open/OpenSeek"/></a>
+    <a href="https://github.com/FlagAI-Open/OpenSeek/network"><img alt="GitHub forks"
+    src="https://img.shields.io/github/forks/FlagAI-Open/OpenSeek"/></a>
+    <a href="https://github.com/FlagAI-Open/OpenSeek/issues"><img alt="GitHub issues"
+    src="https://img.shields.io/github/issues/FlagAI-Open/OpenSeek"/></a>
+    </div>
 </div>
 
 <div align="center">
@@ -10,10 +29,6 @@ OpenSeek is dedicated to uniting the global open-source community to drive colla
 English| [简体中文](README_zh.md)
 
 
-[![GitHub license](https://img.shields.io/github/license/FlagAI-Open/OpenSeek)](https://github.com/FlagAI-Open/OpenSeek/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/FlagAI-Open/OpenSeek)](https://github.com/FlagAI-Open/OpenSeek/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/FlagAI-Open/OpenSeek)](https://github.com/FlagAI-Open/OpenSeek/network)
-[![GitHub issues](https://img.shields.io/github/issues/FlagAI-Open/OpenSeek)](https://github.com/FlagAI-Open/OpenSeek/issues)
 
 </div>
 
