@@ -1,12 +1,27 @@
 # CCI4.0-M2 v1 Dataset Documentation
 
 ## Overview
-CCI4.0-M2 v1 is a comprehensive dataset collection consisting of two specialized subsets designed for language model training. This document provides detailed specifications for each subset.
+CCI4.0-M2 v1 is a comprehensive dataset collection consisting of two specialized subsets designed for language model training. 
 
 || CCI4.0-M2-Base v1 | CCI4.0-M2-CoT v1 |
 |--|--|--|
 |Download Link| [BAAI_datahub](https://data.baai.ac.cn/datadetail/BAAI-CCI4.0-M2-Base-v1) / [modelscope](https://www.modelscope.cn/datasets/BAAI/CCI4.0-M2-Base-v1) / [hf](https://huggingface.co/datasets/BAAI/CCI4.0-M2-Base-v1) | [BAAI_datahub](https://data.baai.ac.cn/datadetail/BAAI-CCI4.0-M2-CoT-v1) / [modelscope](https://www.modelscope.cn/datasets/BAAI/CCI4.0-M2-CoT-v1) / [hf](https://huggingface.co/datasets/BAAI/CCI4.0-M2-CoT-v1) |
 |Notes| 5.2TB Chinese webpage, 22TB English webpage, some data released in CCI4.0-M2-Extra([BAAI_datahub](https://data.baai.ac.cn/datadetail/BAAI-CCI4.0-M2-Extra-v1) / [modelscope](https://www.modelscope.cn/datasets/BAAI/CCI4.0-M2-Extra-v1) / [hf](https://huggingface.co/datasets/BAAI/CCI4.0-M2-Extra-v1)) due to the license concern. | 430 million CoT sample covers math, code, arxiv, wiki and webpage|
+
+The disk storage for different subdomain datasets is shown in the table below:
+| DataSets         | Lines         | Volume (G)   |
+|------------------|---------------|--------------|
+| Web-EN           | 7,175,101,435 | 22,498.641   |
+| Web-ZH           | 1,643,503,909 | 5,161.0895   |
+| Code             | 215,521,589.3 | 896.57865    |
+| Math             | 49,685,043.87 | 269.06715    |
+| Books            | 255,369,254.6 | 858.55473    |
+| Wiki             | 44,086,649.31 | 96.667659    |
+| Arxiv            | 1,536,117.66  | 87.12        |
+| ForumQA          | 28,664,137.6  | 78.00555     |
+| pes2o            | 4,354,668.22  | 117.14234    |
+| CoT_synthesis    | 392,470,068.8 | 4,121.978    |
+
 
 ## Subset Specifications
 
