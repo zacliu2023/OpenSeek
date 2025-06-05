@@ -1,13 +1,12 @@
 # CCI4.0-M2 v1 Dataset Documentation
 
 ## Overview
-CCI4.0-M2 v1 is a comprehensive dataset collection consisting of three specialized subsets designed for different aspects of language model training. This document provides detailed specifications for each subset.
+CCI4.0-M2 v1 is a comprehensive dataset collection consisting of two specialized subsets designed for language model training. This document provides detailed specifications for each subset.
 
 || CCI4.0-M2-Base v1 | CCI4.0-M2-CoT v1 |
 |--|--|--|
 |Download Link| [BAAI_datahub](https://data.baai.ac.cn/datadetail/BAAI-CCI4.0-M2-Base-v1) / [modelscope](https://www.modelscope.cn/datasets/BAAI/CCI4.0-M2-Base-v1) / [hf](https://huggingface.co/datasets/BAAI/CCI4.0-M2-Base-v1) | [BAAI_datahub](https://data.baai.ac.cn/datadetail/BAAI-CCI4.0-M2-CoT-v1) / [modelscope](https://www.modelscope.cn/datasets/BAAI/CCI4.0-M2-CoT-v1) / [hf](https://huggingface.co/datasets/BAAI/CCI4.0-M2-CoT-v1) |
 |Notes| 5.2TB Chinese webpage, 22TB English webpage, some data released in CCI4.0-M2-Extra([BAAI_datahub](https://data.baai.ac.cn/datadetail/BAAI-CCI4.0-M2-Extra-v1) / [modelscope](https://www.modelscope.cn/datasets/BAAI/CCI4.0-M2-Extra-v1) / [hf](https://huggingface.co/datasets/BAAI/CCI4.0-M2-Extra-v1)) due to the license concern. | 430 million CoT sample covers math, code, arxiv, wiki and webpage|
-
 
 ## Subset Specifications
 
@@ -23,7 +22,8 @@ CCI4.0-M2 v1 is a comprehensive dataset collection consisting of three specializ
   - Knowledge enhancement via LLM rewriting and generation
   - Filtering based on LLM Loss grouped by domain
   - PII and toxic filtering
-- **License**: Due to the [license concern](#license-details), we split CCI4.0-M2-Base v1 into 2 datasets.
+- **License**:
+  Due to the [license concern](#license-details), we split CCI4.0-M2-Base v1 into 2 datasets.
   1. CCI4.0-M2-Base-v1 
     - For open-source datasets, we selected those with an **Apache-2.0 license**.  
     - For datasets contributed by various institutions, we conducted **additional license verification**.  
