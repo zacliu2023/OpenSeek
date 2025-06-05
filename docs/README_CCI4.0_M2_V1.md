@@ -2,11 +2,11 @@
 
 ## Overview
 CCI4.0-M2 v1 is a comprehensive dataset collection consisting of three specialized subsets designed for different aspects of language model training. This document provides detailed specifications for each subset.
-| Dataset | Download Link |
-| --- | --- |
-| CCI4.0-M2-Base v1 | [hf](https://huggingface.co/datasets/BAAI/CCI4.0-M2-Base-v1) |
-| CCI4.0-M2-CoT v1 | [hf](https://huggingface.co/datasets/BAAI/CCI4.0-M2-CoT-v1) |
-| CCI4.0-M2-Extra v1 | [hf](https://huggingface.co/datasets/BAAI/CCI4.0-M2-Extra-v1) |
+
+|| CCI4.0-M2-Base v1 | CCI4.0-M2-CoT v1 |
+|--|--|--|
+|Download Link| [BAAI_datahub](https://data.baai.ac.cn/datadetail/BAAI-CCI4.0-M2-Base-v1) / [modelscope](https://www.modelscope.cn/datasets/BAAI/CCI4.0-M2-Base-v1) / [hf](https://huggingface.co/datasets/BAAI/CCI4.0-M2-Base-v1) | [BAAI_datahub](https://data.baai.ac.cn/datadetail/BAAI-CCI4.0-M2-CoT-v1) / [modelscope](https://www.modelscope.cn/datasets/BAAI/CCI4.0-M2-CoT-v1) / [hf](https://huggingface.co/datasets/BAAI/CCI4.0-M2-CoT-v1) |
+|Notes| 5.2TB Chinese webpage, 22TB English webpage, some data released in CCI4.0-M2-Extra([BAAI_datahub](https://data.baai.ac.cn/datadetail/BAAI-CCI4.0-M2-Extra-v1) / [modelscope](https://www.modelscope.cn/datasets/BAAI/CCI4.0-M2-Extra-v1) / [hf](https://huggingface.co/datasets/BAAI/CCI4.0-M2-Extra-v1)) due to the license concern. | 430 million CoT sample covers math, code, arxiv, wiki and webpage|
 
 
 ## Subset Specifications
@@ -14,67 +14,55 @@ CCI4.0-M2 v1 is a comprehensive dataset collection consisting of three specializ
 ### CCI4.0-M2-Base v1
 - **Purpose**: Core pretraining data for general language understanding
 - **Data Composition**:
-  - Chinese: 30% (Including data from cooperation projects and open-source projects)
-  - English: 70%, primarily sourced from Nemotron-CC
-- **Source Distribution**:
-  - Webpages: 100%
-- **Total Volume**: 3500GB
-- **License**: Alpache 2.0
+  - Chinese: 15% (Including data from cooperation projects and open-source projects)
+  - English: 85% (primarily sourced from Nemotron-CC and various specific domains like math, code, books etc)
+- **Total Volume**: 3000GB
 - **Processing**:
   - Document-level and phrase-level deduplication
   - Rigorous quality filtering through the integration of three quality scores
   - Knowledge enhancement via LLM rewriting and generation
   - Filtering based on LLM Loss grouped by domain
-
-Data sources for the first batch of open-source CCI4.0-M2-Base v1
-| Serial Number | Data Source | Open Source License |
-| - | --- | --- |
-| 1 | ChineseWebText2.0 | apache-2.0 |
-| 2 | HPLT2.0_cleaned/zho_Hans | cc0-1.0 |
-| 3 | TeleChat-PTD | apache-2.0 |
-| 4 | data from cooperation projects  | apache-2.0 |
-| 5 | Nemotron-CC | Common Crawl License |
-
-*Nemotron-CC is likely subject to the Common Crawl License. Therefore, we will only release the metadata of Nemotron-CC along with our processed scores.*
+  - PII and toxic filtering
+- **License**: Due to the [license concern](#license-details), we split CCI4.0-M2-Base v1 into 2 datasets.
+  1. CCI4.0-M2-Base-v1 
+    - For open-source datasets, we selected those with an **Apache-2.0 license**.  
+    - For datasets contributed by various institutions, we conducted **additional license verification**.  
+    - **Nemotron-CC** is subject to the **Common Crawl License**, so we will only release its **metadata** along with our **processed scores**.  
+  2. CCI4.0-M2-Extra-v1
+    - For data that is open-source but requires independent licensing or involves mixed/composite licenses, we categorize it under this "Extra" dataset.
 
 ### CCI4.0-M2-CoT v1 
 - **Purpose**: Chain-of-Thought reasoning enhancement
-- **Data Composition**:
-  - English: 40%
 - **Total Volume**: 4200GB
 - **Special Features**:
   - Step-by-step CoT trajactorys
   - Detailed question generation
   - Multiple domain coverage(e.g., math, code, webpages)
+- **License**
+  Based on the data from these sources, CoT synthesis and instruction synthesis of reverse thinking have been carried out. Due to license considerations, a separate directory will be created to open-source these data.
+
 #### Introduction and Demonstration of Synthesized Chain-of-Thought (CoT)
 
 The Chain-of-Thought (CoT) in the CCI4.0-M2-CoT v1 subset is synthesized to enhance the reasoning capabilities of language models. This synthesis process involves generating step-by-step reasoning trajectories based on various data sources
 
 The following image illustrates the CoT synthesis pipeline:
 
-![CoT Pipeline](CoT_Pipeline.png)
+<img src="CoT_Pipeline.png" alt="CoT_Pipeline" width="400"/>
 
 This pipeline showcases how the raw data from different sources is processed and transformed into structured CoT data, which can be used for training language models to perform complex reasoning tasks.
 
-| Data Source | License |
+## License Details
+*Disclaimer: If any violations of the dataset usage agreement or licensing terms are identified, we kindly request that you notify us as soon as possible. *
+We have organized the agreements for the open-source datasets and confirmed them individually. Below is a list of the main datasets and their corresponding licenses.
+
+| Data Source | Open Source License |
 | --- | --- |
-| KodCode/KodCode-V1 | cc-by-nc-4.0 |
-| facebook/natural_reasoning | cc-by-nc-4.0 |
-| allenai/dolma | odc-by |
-| allenai/dolmino-mix-1124 | odc-by |
-| HuggingFaceTB/finemath | odc-by |
-| open-web-math/open-web-math | ODC-By 1.0 |
-| allenai/dolmino-mix-1124 | odc-by |
-
-*Based on the data from these sources, CoT synthesis and instruction synthesis of reverse thinking have been carried out. Due to license considerations, a separate directory will be created to open-source these data.*
-
-
-### CCI4.0-M2-Extra v1
-- **Purpose**: Supplemental domain-specific knowledge
-- **Total Volume**: to be determined
-- **License**: license to be determined
-
-| Data Source | License |
+| ChineseWebText2.0 | apache-2.0 |
+| HPLT2.0_cleaned/zho_Hans | cc0-1.0 |
+| TeleChat-PTD | apache-2.0 |
+| data from cooperation projects  | apache-2.0 |
+| Nemotron-CC | Common Crawl License |
+| CCI | apache-2.0 |
 | --- | --- |
 | MAP-CC | CC-BY-NC-ND-4.0 |
 | fineweb-2 | ODC-BY |
@@ -87,8 +75,17 @@ This pipeline showcases how the raw data from different sources is processed and
 | dolma | ODC-BY |
 | opc-fineweb-math-corpus | ODC-BY |
 | proof-pile-2 | MIT, BSD, or Apache, ODC-By 1.0 license, etc. |
+| --- | --- |
+| KodCode/KodCode-V1 | cc-by-nc-4.0 |
+| facebook/natural_reasoning | cc-by-nc-4.0 |
+| allenai/dolma | odc-by |
+| allenai/dolmino-mix-1124 | odc-by |
+| HuggingFaceTB/finemath | odc-by |
+| open-web-math/open-web-math | ODC-By 1.0 |
+| allenai/dolmino-mix-1124 | odc-by |
 
-*These datasets will be separately open-sourced under a single project due to their license agreements.*
+## Acknowledgments
+We gratefully acknowledge the valuable contributions of Institutions Alibaba Cloud (阿里云), Shanghai AI Laboratory (上海人工智能实验室), Huawei (华为), Mobvoi (出门问问), Kingsoft Office Software (金山办公), Kunlun (昆仑万维), ModelBest (面壁智能), Qihoo (奇虎科技), Meituan (美团),  MiniMax (稀宇科技), Moonshot AI (月之暗面), Zidong Taichu (紫东太初), Wenge (中科闻歌) and iFLYTEK (科大讯飞) in providing the Chinese data.
 
 ## Usage Agreement
 Users need to comply with the usage agreement of the CCI 3.0 HQ dataset. You can view the agreement by clicking on the following link: （[View Usage Agreement](https://data.baai.ac.cn/resources/agreement/cci_usage_aggrement.pdf)）.
