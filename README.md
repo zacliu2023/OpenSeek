@@ -2,7 +2,7 @@
   <img src="./openseek_logo.jpg" alt="OpenSeek Logo" width="150">
   <hr>
   <div align="center" style="line-height: 1;">
-    <a href="https://huggingface.co/spaces/BAAI/openseek"><img alt="Homepage"
+    <a href="https://openseek.baai.ac.cn/"><img alt="Homepage"
       src="https://img.shields.io/badge/Homepage-OpenSeek-7289da?logo=home&logoColor=white&color=blue"/></a>
     <a href="https://huggingface.co/collections/BAAI/openseek-67b6f47eea718e4e5d2c255a"><img alt="Hugging Face"
       src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-OpenSeek-ffc107?color=ffc107&logoColor=white"/></a>
