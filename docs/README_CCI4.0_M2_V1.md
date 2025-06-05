@@ -52,7 +52,8 @@ The following image illustrates the CoT synthesis pipeline:
 This pipeline showcases how the raw data from different sources is processed and transformed into structured CoT data, which can be used for training language models to perform complex reasoning tasks.
 
 ## License Details
-*Disclaimer: If any violations of the dataset usage agreement or licensing terms are identified, we kindly request that you notify us as soon as possible. *
+**Disclaimer: If any violations of the dataset usage agreement or licensing terms are identified, we kindly request that you notify us as soon as possible. **
+
 We have organized the agreements for the open-source datasets and confirmed them individually. Below is a list of the main datasets and their corresponding licenses.
 
 | Data Source | Open Source License |
