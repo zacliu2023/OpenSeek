@@ -104,7 +104,7 @@ We have organized the agreements for the open-source datasets and confirmed them
 We gratefully acknowledge the valuable contributions of Institutions Alibaba Cloud (阿里云), Shanghai AI Laboratory (上海人工智能实验室), Huawei (华为), Mobvoi (出门问问), Kingsoft Office Software (金山办公), Kunlun (昆仑万维), ModelBest (面壁智能), Qihoo (奇虎科技), Meituan (美团),  MiniMax (稀宇科技), Moonshot AI (月之暗面), Zidong Taichu (紫东太初), Wenge (中科闻歌) and iFLYTEK (科大讯飞) in providing the Chinese data.
 
 ## Usage Agreement
-Users need to comply with the usage agreement of the CCI 3.0 HQ dataset. You can view the agreement by clicking on the following link: （[View Usage Agreement](https://data.baai.ac.cn/resources/agreement/cci_usage_aggrement.pdf)）.
+Users need to comply with the usage agreement of the CCI dataset. You can view the agreement by clicking on the following link: （[View Usage Agreement](https://data.baai.ac.cn/resources/agreement/cci_usage_aggrement.pdf)）.
 
 ## Citation
 Please cite using:
