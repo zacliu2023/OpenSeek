@@ -1,5 +1,8 @@
 # CCI4.0-M2 v1 Dataset Documentation
 
+<a href="https://arxiv.org/abs/2506.07463"><b>Tech Report</b>👁</a>
+
+
 ## Overview
 CCI4.0-M2 v1 is a comprehensive dataset collection consisting of two specialized subsets designed for language model training. 
 
@@ -109,10 +112,13 @@ Users need to comply with the usage agreement of the CCI dataset. You can view t
 ## Citation
 Please cite using:
 ```
-@dataset{cci4_m2_v1,
-  title={CCI4.0-M2 v1 Dataset Collection},
-  author={OpenSeek Team},
-  year={2025},
-  publisher={Beijing Academy of Artificial Intelligence}
+@misc{liu2025cci40bilingualpretrainingdataset,
+      title={CCI4.0: A Bilingual Pretraining Dataset for Enhancing Reasoning in Large Language Models}, 
+      author={Guang Liu and Liangdong Wang and Jijie Li and Yang Yu and Yao Xu and Jiabei Chen and Yu Bai and Feng Liao and Yonghua Lin},
+      year={2025},
+      eprint={2506.07463},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2506.07463}, 
 }
 ```
