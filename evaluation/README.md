@@ -9,6 +9,7 @@ We utilize the following GitHub repositories for our model evaluations:
 * **lm-evaluation-harness**: [https://github.com/EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness)  
 * **lighteval**: [https://github.com/huggingface/lighteval](https://github.com/huggingface/lighteval)  
 * **reflection** (for adversarial evaluation): [https://github.com/Essential-AI/reflection](https://github.com/Essential-AI/reflection)
+* **qwen_eval**: [https://github.com/QwenLM/Qwen2.5-Math]
 
 ## **Evaluated Datasets and Methods**
 
