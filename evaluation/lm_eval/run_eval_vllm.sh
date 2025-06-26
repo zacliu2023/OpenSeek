@@ -3,7 +3,7 @@ set -u
 set +u
 
 # https://github.com/EleutherAI/lm-evaluation-harness
-# commit e20e1ddc7963996d1c9310a7e880b5c17b54295d
+# commit 6b3f3f7e2aece0597a0a4853d364061f93eef5ef
 export VLLM_USE_FLASHINFER_SAMPLER=0
 
 #hellaswag
