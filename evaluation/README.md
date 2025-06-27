@@ -38,6 +38,11 @@ Simple usage:
 bash lm_eval/run_eval.sh path/to/model
 ```
 
+vllm usage:
+```shell
+bash run_eval_vllm.sh path/to/model
+```
+
 ### **2\. Using lighteval (Customized)**
 
 We customized lighteval for evaluating models on these datasets:
