@@ -1,9 +1,9 @@
 
 set -u
   MODEL_URL=$1
+  FS_ROOT_PATH=$2
 set +u
 
-FS_ROOT_PATH=xxx
 vLLM_ROOT_PATH=$FS_ROOT_PATH/third_party/vllm
 
 export VLLM_USE_FLASHINFER_SAMPLER=0
