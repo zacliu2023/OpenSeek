@@ -24,7 +24,7 @@ experiment:
     nproc_per_node: 1
     hostfile: null
   cmds:
-    before_start: "ulimit -n 1048576 && source /root/miniconda3/bin/activate flagscale"
+    before_start: "ulimit -n 1048576 && source /root/miniconda3/bin/activate flagscale-train"
   envs:
     VISIBLE_DEVICES: 0
     DEVICE_MAX_CONNECTIONS: 1
